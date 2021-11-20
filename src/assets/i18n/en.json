@@ -1,0 +1,61 @@
+{
+  "Nav": {
+    "Server": "Server",
+    "Disconnect": "Disconnect",
+    "DisconnectAll": "Disconnect All",
+    "View": "View",
+    "HideLeft": "Hide left manager",
+    "SplitVertical": "Split vertical",
+    "CommandBar": "Command Bar",
+    "ShareSession": "Share session (read/write)",
+    "Settings": "Settings",
+    "FullScreen": "Full Screen",
+    "Help": "Help",
+    "Website": "Website",
+    "Document": "Document",
+    "Support": "Support",
+    "License": "License"
+  },
+  "AssetSearch": "Search",
+  "LeftBar": {
+    "Dashboard": "Dashboard",
+    "User": {
+      "s": "Users",
+      "List": "Users",
+      "UserGroup": "User Group"
+    },
+    "Asset": {
+      "s": "Assets",
+      "List": "Asset List",
+      "DomainList": "Domain List",
+      "AdminUser": "Admin User",
+      "SystemUser": "System User",
+      "Labels": "Labels"
+    },
+    "Perm": {
+      "s": "Perms",
+      "AssetPermission": "Asset Permission",
+      "RemoteApp": "RemoteApp"
+    },
+    "Session": {
+      "s": "Sessions",
+      "Online": "Session Online",
+      "Offline": "Session Offline",
+      "Commands": "Commands",
+      "Terminal": "Terminal"
+    },
+    "JobCenter": {
+      "s": "Job Center",
+      "Task": "Task"
+    },
+    "Settings": "Settings"
+  },
+  "Setting": {
+    "Basic": "Basic Setting",
+    "Email": "Email Setting",
+    "LDAP": "LDAP Setting",
+    "Terminal": "Terminal Setting",
+    "LangSelect": "Select your language",
+    "MaxAssetTree": "Asset Tree: Max Show Asset"
+  }
+}
