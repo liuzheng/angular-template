@@ -76,8 +76,13 @@
               },
               {
                 "input": "node_modules/datatables.net-dt/css/",
-                "glob": "jquery.dataTables.css",
+                "glob": "jquery.dataTables.min.css",
                 "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/./datatables.net-dt/images/",
+                "glob": "*.png",
+                "output": "assets/images/"
               }
             ],
             "styles": [
