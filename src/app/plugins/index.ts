@@ -4,8 +4,7 @@ import {MaterialModule, MaterialModules} from "./MaterialModule.component";
 import {LoggerModule, NgxLoggerLevel} from "ngx-logger";
 // import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-// import {NgProgressModule} from 'ngx-progressbar';
-// import {FlexLayoutModule} from '@angular/flex-layout';
+import {NgProgressModule} from 'ngx-progressbar';
 
 import {ToastrModule} from "ngx-toastr";
 import {HttpClient} from "@angular/common/http";
@@ -14,7 +13,8 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {NgxEchartsModule} from "ngx-echarts";
 import {CdkTreeModule} from "@angular/cdk/tree";
 // import {ContextMenuModule} from 'ngx-contextmenu';
-// import {SplitModule} from "./split/split.module";
+import { AngularSplitModule } from 'angular-split';
+import { DataTablesModule } from "angular-datatables";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -25,9 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     CdkTreeModule,
     BrowserAnimationsModule,
-    // NgProgressModule,
+    NgProgressModule,
     MaterialModule,
-    // ...MaterialModules,
     LoggerModule.forRoot({
       serverLoggingUrl: "/api/logs",
       level: NgxLoggerLevel.DEBUG,
@@ -35,7 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     // NgxDatatableModule,
     // NgxUIModule,
-    // SplitModule
+    AngularSplitModule,
     // FlexLayoutModule,
     ToastrModule.forRoot(), // ToastrModule added
     TranslateModule.forRoot({
@@ -45,11 +44,11 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    // NgxEchartsModule,
+    NgxEchartsModule,
     // ContextMenuModule.forRoot({
     //   useBootstrap4: true
     // }),
-    // SplitModule
+    DataTablesModule
   ]
 })
 export class PluginModule {

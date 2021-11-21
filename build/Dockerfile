@@ -6,5 +6,5 @@ RUN npm i
 RUN npm run build
 
 FROM nginx:alpine
-COPY --from=0 /app/dist /opt/app/
+COPY --from=0 /app/deploy/app/ /opt/app/
 COPY nginx.conf /etc/nginx/conf.d/default.conf

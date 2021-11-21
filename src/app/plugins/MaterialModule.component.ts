@@ -130,19 +130,17 @@ export class MaterialModule {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     this.icons = [
       {name: "ansible"},
-      {name: "account_tree"},
+      {name: "chevron_right"},
+      {name: "console"},
       {name: "dashboard"},
+      {name: "expand_more"},
+      {name: "file-tree"},
+      {name: "linux"},
+      {name: "menu-left"},
+      {name: "menu-right"},
       {name: "person"},
       {name: "settings"},
-      {name: "console"},
-      {name: "ansible"},
       {name: "windows"},
-      {name: "linux"},
-      {name: "expand_more"},
-      {name: "chevron_right"},
-      {name: "file-tree"},
-      {name: "menu-right"},
-      {name: "menu-left"},
     ];
     this.icons.forEach(function (i: icon) {
       if (i.name != null) {

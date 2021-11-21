@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-template",
+            "outputPath": "deploy/app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,57 @@
             "aot": false,
             "inlineStyleLanguage": "sass",
             "assets": [
-              "src/assets"
+              "src/assets",
+              {
+                "input": "node_modules/animate.css/",
+                "glob": "animate.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/xterm/css/",
+                "glob": "xterm.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/jquery/dist/",
+                "glob": "jquery.min.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/echarts/dist/",
+                "glob": "echarts.min.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/xterm/lib/",
+                "glob": "xterm.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/socket.io-client/dist/",
+                "glob": "socket.io.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/datatables.net/js/",
+                "glob": "jquery.dataTables.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/bootstrap/dist/js/",
+                "glob": "bootstrap.min.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/bootstrap/dist/css/",
+                "glob": "bootstrap.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/datatables.net-dt/css/",
+                "glob": "jquery.dataTables.css",
+                "output": "assets/css/"
+              }
             ],
             "styles": [
               "src/styles/styles.sass"
@@ -43,7 +93,6 @@
               "namedChunks": false,
               "aot": true,
               "baseHref": "/",
-              "deployUrl": "/",
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
