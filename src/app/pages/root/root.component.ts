@@ -1,7 +1,8 @@
-
-import {Component} from "@angular/core";
+import {Component, AfterViewInit, ViewChild} from "@angular/core";
 import {TranslateService} from "@ngx-translate/core";
 import {Router} from "@angular/router";
+import {NgProgressComponent} from "ngx-progressbar";
+
 import {AppProvider, LogProvider} from "../../providers";
 import {Globals} from "../../globals";
 import {baseHref} from "../../../environments/environment";
@@ -11,15 +12,15 @@ import {baseHref} from "../../../environments/environment";
   templateUrl: "./root.component.html",
   styleUrls: ["./root.component.sass"],
 })
-
-export class AppRootComponent {
+export class AppRootComponent implements AfterViewInit {
+  @ViewChild(NgProgressComponent) progressBar!: NgProgressComponent;
   browserLang: any;
 
   constructor(private translate: TranslateService,
               private app: AppProvider,
               private router: Router,
               private logger: LogProvider,
-              private global: Globals
+              private global: Globals,
   ) {
     translate.addLangs(["en", "cn"]);
     translate.setDefaultLang("en");
@@ -38,6 +39,11 @@ export class AppRootComponent {
       // bypass the login check
     } else {
     }
+  }
+
+  ngAfterViewInit(): void {
+    this.progressBar.start();
+    // this.progressBar.complete()
   }
 
 }
