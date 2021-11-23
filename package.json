@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "ng:serve": "ng serve --proxy-config proxy.conf.json",
-    "ng:build": "ng build --prod ",
-    "ng:stats": "ng build --stats-json ",
+    "ng:build": "ng build",
+    "ng:stats": "ng build --stats-json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
