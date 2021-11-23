@@ -7,6 +7,7 @@
     "build": "ng build",
     "ng:serve": "ng serve --proxy-config proxy.conf.json",
     "ng:build": "ng build --prod ",
+    "ng:stats": "ng build --stats-json ",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -74,6 +75,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.4.3"
+    "typescript": "~4.4.3",
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }

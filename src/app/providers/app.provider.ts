@@ -1,10 +1,3 @@
-/**
- * 后台控制
- *
- *
- * @date     2017-11-07
- * @author   liuzheng <liuzheng712@gmail.com>
- */
 import {Injectable, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import {CookieService} from "ngx-cookie-service";
@@ -17,7 +10,7 @@ import {LocalstorageProvider} from "./localstorage.provider";
 // import {DialogService} from "../elements/dialog/dialog.service";
 import {HttpErrorResponse} from "@angular/common/http";
 
-declare function unescape(s: string): string;
+// declare function unescape(s: string): string;
 
 @Injectable()
 export class AppProvider {

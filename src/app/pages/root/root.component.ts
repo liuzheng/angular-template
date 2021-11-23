@@ -1,7 +1,6 @@
-import {Component, AfterViewInit, ViewChild} from "@angular/core";
+import {Component} from "@angular/core";
 import {TranslateService} from "@ngx-translate/core";
 import {Router} from "@angular/router";
-import {NgProgressComponent} from "ngx-progressbar";
 
 import {AppProvider, LogProvider} from "../../providers";
 import {Globals} from "../../globals";
@@ -12,8 +11,7 @@ import {baseHref} from "../../../environments/environment";
   templateUrl: "./root.component.html",
   styleUrls: ["./root.component.sass"],
 })
-export class AppRootComponent implements AfterViewInit {
-  @ViewChild(NgProgressComponent) progressBar!: NgProgressComponent;
+export class AppRootComponent {
   browserLang: any;
 
   constructor(private translate: TranslateService,
@@ -40,10 +38,4 @@ export class AppRootComponent implements AfterViewInit {
     } else {
     }
   }
-
-  ngAfterViewInit(): void {
-    this.progressBar.start();
-    // this.progressBar.complete()
-  }
-
 }

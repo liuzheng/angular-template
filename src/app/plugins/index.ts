@@ -17,7 +17,7 @@ import {AngularSplitModule} from "angular-split";
 import {DataTablesModule} from "angular-datatables";
 
 // AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
+function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
@@ -49,7 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     // }),
     DataTablesModule
   ],
-  exports:[
+  exports: [
     MaterialModule,
     NgProgressModule
   ]
