@@ -81,9 +81,14 @@
                 "output": "assets/css/"
               },
               {
-                "input": "node_modules/./datatables.net-dt/images/",
+                "input": "node_modules/datatables.net-dt/images/",
                 "glob": "*.png",
                 "output": "assets/images/"
+              },
+              {
+                "input": "node_modules/ace-builds/src-min-noconflict/",
+                "glob": "**",
+                "output": "assets/ace/"
               }
             ],
             "styles": [
