@@ -41,6 +41,11 @@
                 "output": "assets/css/"
               },
               {
+                "input": "node_modules/xterm/lib/",
+                "glob": "xterm.js",
+                "output": "assets/js/"
+              },
+              {
                 "input": "node_modules/jquery/dist/",
                 "glob": "jquery.min.js",
                 "output": "assets/js/"
@@ -48,11 +53,6 @@
               {
                 "input": "node_modules/echarts/dist/",
                 "glob": "echarts.min.js",
-                "output": "assets/js/"
-              },
-              {
-                "input": "node_modules/xterm/lib/",
-                "glob": "xterm.js",
                 "output": "assets/js/"
               },
               {

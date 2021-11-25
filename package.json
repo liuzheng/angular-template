@@ -58,6 +58,10 @@
     "utf-8-validate": "^5.0.7",
     "uuid": "^8.3.2",
     "uuid-js": "^0.7.5",
+    "xterm": "^4.15.0",
+    "xterm-addon-attach": "^0.6.0",
+    "xterm-addon-fit": "^0.5.0",
+    "xterm-addon-web-links": "^0.4.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

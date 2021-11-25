@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from "@angular/core";
 import * as ace from "ace-builds";
-
+// todo: npm i ngx-ace-wrapper
 @Component({
   selector: "example-ace-editor",
   templateUrl: "./ace-editor.component.html",

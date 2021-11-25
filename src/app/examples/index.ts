@@ -7,12 +7,14 @@ import {ExampleDatatableComponent} from "./datatable/datatable.component"
 import {ExampleMatMenuComponent} from "./mat-menu/mat-menu.component"
 import {ExampleProgressComponent} from "./progress/progress.component"
 import {ExampleAceEditorComponent} from "./ace-editor/ace-editor.component"
+import {ExampleTerminalComponent} from "./terminal/terminal.component";
 
 export const ExampleRoutes: Routes = [
   {path: "example/datatable", component: ExampleDatatableComponent},
   {path: "example/matmenu", component: ExampleMatMenuComponent},
   {path: "example/progress", component: ExampleProgressComponent},
   {path: "example/aceeditor", component: ExampleAceEditorComponent},
+  {path: "example/terminal", component: ExampleTerminalComponent},
 ];
 
 @NgModule({
@@ -25,6 +27,7 @@ export const ExampleRoutes: Routes = [
     ExampleMatMenuComponent,
     ExampleProgressComponent,
     ExampleAceEditorComponent,
+    ExampleTerminalComponent,
   ]
 })
 export class ExamplesModule {
