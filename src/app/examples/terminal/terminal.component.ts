@@ -3,7 +3,9 @@ import {Terminal} from "xterm";
 import {WebLinksAddon} from "xterm-addon-web-links";
 import {AttachAddon} from "xterm-addon-attach";
 import {FitAddon} from "xterm-addon-fit";
+import "zmodem.js/dist/zmodem.devel"
 
+// todo: zmode support
 @Component({
   selector: "example-terminal",
   templateUrl: "./terminal.component.html",
@@ -21,10 +23,11 @@ export class ExampleTerminalComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     const terminal = new Terminal();
     terminal.loadAddon(new WebLinksAddon());
-    // terminal.loadAddon(new AttachAddon(webSocket));
     const fitAddon = new FitAddon();
     terminal.loadAddon(fitAddon);
+
     terminal.open(this.el.nativeElement);
+    // terminal.loadAddon(new AttachAddon(webSocket));
     fitAddon.fit();
 
     terminal.write("Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ")
