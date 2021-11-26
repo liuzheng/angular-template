@@ -39,6 +39,7 @@
     "echarts": "^5.2.2",
     "hammerjs": "^2.0.8",
     "jquery": "^3.6.0",
+    "metro4": "^4.5.0",
     "mkdirp": "^1.0.4",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.34",

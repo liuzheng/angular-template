@@ -89,6 +89,16 @@
                 "input": "node_modules/ace-builds/src-min-noconflict/",
                 "glob": "**",
                 "output": "assets/ace/"
+              },
+              {
+                "input": "node_modules/metro4/build/css/",
+                "glob": "metro-all.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/metro4/build/js/",
+                "glob": "metro.min.js",
+                "output": "assets/js/"
               }
             ],
             "styles": [

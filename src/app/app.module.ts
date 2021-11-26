@@ -9,6 +9,7 @@ import {PipesModule} from "./pipes";
 import {ProviderModule} from "./providers"
 import {PluginModule} from "./plugins";
 import {ExamplesModule} from "./examples";
+import {PartModule} from "./parts";
 
 @NgModule({
   imports: [
@@ -20,8 +21,9 @@ import {ExamplesModule} from "./examples";
     PipesModule,
     PluginModule,
     ProviderModule,
-    PageModule,
-    ExamplesModule
+    ExamplesModule,
+    PartModule,
+    PageModule
   ],
   declarations: [
     AppRootComponent,

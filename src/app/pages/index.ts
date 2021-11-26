@@ -4,6 +4,7 @@ import {Routes} from "@angular/router";
 import {PageIndexComponent} from "./index/index.component"
 import {PageBlankComponent} from "./blank/blank.component";
 import {PageNotFoundComponent} from "./not-found/not-found.component";
+import {PartModule} from "../parts";
 
 export {AppRootComponent} from "./root/root.component"
 
@@ -14,6 +15,7 @@ export const PageRoutes: Routes = [
 ];
 
 @NgModule({
+  imports: [PartModule],
   declarations: [
     PageIndexComponent,
     PageBlankComponent,
