@@ -1,5 +1,5 @@
 import {NgModule} from "@angular/core";
-import {Routes} from "@angular/router";
+import {RouterModule, Routes} from "@angular/router";
 import {BrowserModule} from "@angular/platform-browser";
 import {PluginModule} from "../plugins";
 
@@ -22,7 +22,8 @@ export const ExampleRoutes: Routes = [
 @NgModule({
   imports: [
     BrowserModule,
-    PluginModule
+    PluginModule,
+    RouterModule
   ],
   declarations: [
     ExampleDatatableComponent,

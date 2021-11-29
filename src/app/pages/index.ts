@@ -1,10 +1,11 @@
 import {NgModule} from "@angular/core";
-import {Routes} from "@angular/router";
+import {Routes, RouterModule} from "@angular/router";
 
 import {PageIndexComponent} from "./index/index.component"
 import {PageBlankComponent} from "./blank/blank.component";
 import {PageNotFoundComponent} from "./not-found/not-found.component";
 import {PartModule} from "../parts";
+import {AppRootComponent} from "./root/root.component";
 
 export {AppRootComponent} from "./root/root.component"
 
@@ -15,7 +16,10 @@ export const PageRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [PartModule],
+  imports: [
+    PartModule,
+    RouterModule
+  ],
   declarations: [
     PageIndexComponent,
     PageBlankComponent,
