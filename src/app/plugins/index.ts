@@ -51,7 +51,8 @@ function HttpLoaderFactory(http: HttpClient) {
   ],
   exports: [
     MaterialModule,
-    NgProgressModule
+    NgProgressModule,
+    TranslateModule
   ]
 })
 export class PluginModule {
