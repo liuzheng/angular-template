@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PartContextMenuComponent } from './context-menu.component';
+import { ExampleContextMenuComponent } from './context-menu.component';
 
-describe('PartContextMenuComponent', () => {
-  let component: PartContextMenuComponent;
-  let fixture: ComponentFixture<PartContextMenuComponent>;
+describe('ExampleContextMenuComponent', () => {
+  let component: ExampleContextMenuComponent;
+  let fixture: ComponentFixture<ExampleContextMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PartContextMenuComponent ]
+      declarations: [ ExampleContextMenuComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PartContextMenuComponent);
+    fixture = TestBed.createComponent(ExampleContextMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

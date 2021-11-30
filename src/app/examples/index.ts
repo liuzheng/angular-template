@@ -9,6 +9,7 @@ import {ExampleProgressComponent} from "./progress/progress.component"
 import {ExampleAceEditorComponent} from "./ace-editor/ace-editor.component"
 import {ExampleTerminalComponent} from "./terminal/terminal.component";
 import {ExampleMetroUIComponent} from "./metroui/metroui.component";
+import {ExampleContextMenuComponent} from "./context-menu/context-menu.component";
 
 export const ExampleRoutes: Routes = [
   {path: "example/datatable", component: ExampleDatatableComponent},
@@ -17,6 +18,7 @@ export const ExampleRoutes: Routes = [
   {path: "example/aceeditor", component: ExampleAceEditorComponent},
   {path: "example/terminal", component: ExampleTerminalComponent},
   {path: "example/metroui", component: ExampleMetroUIComponent},
+  {path: "example/metroui/contextmenu", component: ExampleContextMenuComponent},
 ];
 
 @NgModule({
@@ -32,6 +34,7 @@ export const ExampleRoutes: Routes = [
     ExampleAceEditorComponent,
     ExampleTerminalComponent,
     ExampleMetroUIComponent,
+    ExampleContextMenuComponent,
   ]
 })
 export class ExamplesModule {
