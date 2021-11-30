@@ -99,6 +99,11 @@
                 "input": "node_modules/metro4/build/js/",
                 "glob": "metro.min.js",
                 "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/metro4/build/mif/",
+                "glob": "**",
+                "output": "assets/mif/"
               }
             ],
             "styles": [
