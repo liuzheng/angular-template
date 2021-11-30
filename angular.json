@@ -20,28 +20,108 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-template",
+            "outputPath": "deploy/app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
+            "buildOptimizer": true,
             "inlineStyleLanguage": "sass",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "input": "node_modules/animate.css/",
+                "glob": "animate.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/xterm/css/",
+                "glob": "xterm.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/xterm/lib/",
+                "glob": "xterm.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/jquery/dist/",
+                "glob": "jquery.min.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/echarts/dist/",
+                "glob": "echarts.min.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/socket.io-client/dist/",
+                "glob": "socket.io.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/datatables.net/js/",
+                "glob": "jquery.dataTables.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/bootstrap/dist/js/",
+                "glob": "bootstrap.min.js",
+                "output": "assets/js/"
+              },
+              {
+                "input": "node_modules/bootstrap/dist/css/",
+                "glob": "bootstrap.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/datatables.net-dt/css/",
+                "glob": "jquery.dataTables.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/datatables.net-dt/images/",
+                "glob": "*.png",
+                "output": "assets/images/"
+              },
+              {
+                "input": "node_modules/ace-builds/src-min-noconflict/",
+                "glob": "**",
+                "output": "assets/ace/"
+              },
+              {
+                "input": "node_modules/metro4/build/css/",
+                "glob": "metro-all.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/metro4/build/js/",
+                "glob": "metro.min.js",
+                "output": "assets/js/"
+              }
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles/styles.sass"
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": true,
+              "aot": true,
+              "baseHref": "/",
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -54,8 +134,7 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ],
-              "outputHashing": "all"
+              ]
             },
             "development": {
               "buildOptimizer": false,
@@ -95,11 +174,10 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "sass",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles/styles.sass"
             ],
             "scripts": []
           }
