@@ -1,4 +1,4 @@
-import {Component, Inject, Injectable, TemplateRef} from "@angular/core";
+import {Component, Inject, Injectable, NgModule, TemplateRef} from "@angular/core";
 import {MatDialogRef, MatDialogConfig, MatDialog, MAT_DIALOG_DATA} from "@angular/material/dialog"
 import {ToastrService} from "ngx-toastr";
 import {ComponentType} from "@angular/cdk/portal";
@@ -64,7 +64,7 @@ export class DialogService {
 
   dialog(data: Option) {
     data = this.checkdata(data);
-    return this.Dialog.open(DialogProvider, {
+    return this.Dialog.open(DialogComponent, {
       height: data.height.toString() + "xp",
       width: data.width.toString() + "xp",
       data: {name: "this.name", animal: "this.animal"}
@@ -141,7 +141,7 @@ export class DialogService {
 
   prompt(option: Option) {
     // ToDo: use dialog type to fit for requirements
-    this.Dialog.open(DialogProvider, {
+    this.Dialog.open(DialogComponent, {
         height: (option.height || this.defaultOption.height).toString() + "px",
         width: (option.width || this.defaultOption.width).toString() + "px",
         data: option
@@ -155,7 +155,7 @@ export class DialogService {
   templateUrl: "dialog.html",
   styleUrls: ["dialog.scss"]
 })
-export class DialogProvider {
+export class DialogComponent {
   constructor(public dialogRef: MatDialogRef<AlertComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any) {
   }
@@ -196,4 +196,11 @@ export class AlertComponent {
 //   }
 // }
 
-export const DialogComponent = [AlertComponent, DialogProvider];
+@NgModule({
+  providers: [
+    AlertComponent,
+    DialogComponent
+  ]
+})
+export class DialogProvider {
+}
