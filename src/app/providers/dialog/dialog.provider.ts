@@ -1,11 +1,11 @@
-import {Component, Inject, Injectable, TemplateRef} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogConfig} from '@angular/material';
-import {ToastrService} from 'ngx-toastr';
-import {ComponentType} from '@angular/cdk/portal';
+import {Component, Inject, Injectable, TemplateRef} from "@angular/core";
+import {MatDialogRef, MatDialogConfig, MatDialog, MAT_DIALOG_DATA} from "@angular/material/dialog"
+import {ToastrService} from "ngx-toastr";
+import {ComponentType} from "@angular/cdk/portal";
 
 export class Option {
-  width?: number;
-  height?: number;
+  width!: number;
+  height!: number;
   title?: string;
   content?: string;
   timeout?: number;
@@ -27,15 +27,15 @@ export class DialogService {
     timeout: 1000 * 5,
     pauseOnHover: true,
     clickToClose: true,
-    theme: 'default',
+    theme: "default",
     rtl: false,
-    className: 'my-notify',
-    animate_in: 'notify-fade-in',
-    animate_out: 'notify-fade-out',
-    onCreate: item => {
+    className: "my-notify",
+    animate_in: "notify-fade-in",
+    animate_out: "notify-fade-out",
+    onCreate: (item: any) => {
       this.logs.push(item);
     },
-    onDestroy: item => {
+    onDestroy: (item: any) => {
       this.logs.push(item);
     },
   };
@@ -62,12 +62,12 @@ export class DialogService {
     return this.Dialog.open(componentOrTemplateRef, config);
   }
 
-  dialog(data?: Option) {
+  dialog(data: Option) {
     data = this.checkdata(data);
-    return this.Dialog.open(DialogComponent, {
-      height: data.height.toString() + 'xp',
-      width: data.width.toString() + 'xp',
-      data: {name: 'this.name', animal: 'this.animal'}
+    return this.Dialog.open(DialogProvider, {
+      height: data.height.toString() + "xp",
+      width: data.width.toString() + "xp",
+      data: {name: "this.name", animal: "this.animal"}
     });
   }
 
@@ -81,17 +81,17 @@ export class DialogService {
   loading(data?: Option) {
   }
 
-  alert(data?: Option) {
+  alert(data: Option) {
     data = this.checkdata(data);
     return this.Dialog.open(AlertComponent, {
-      height: data.height.toString() + 'xp',
-      width: data.width.toString() + 'xp',
+      height: data.height.toString() + "xp",
+      width: data.width.toString() + "xp",
       data: {content: data.content}
     });
   }
 
   info(msg: (MSG | string)) {
-    if (typeof msg === 'string') {
+    if (typeof msg === "string") {
       this.toastr.info(msg);
     } else {
       if (msg.title) {
@@ -104,7 +104,7 @@ export class DialogService {
 
 
   success(msg: (MSG | string)) {
-    if (typeof msg === 'string') {
+    if (typeof msg === "string") {
       this.toastr.success(msg);
     } else {
       if (msg.title) {
@@ -116,7 +116,7 @@ export class DialogService {
   }
 
   warn(msg: (MSG | string)) {
-    if (typeof msg === 'string') {
+    if (typeof msg === "string") {
       this.toastr.warning(msg);
     } else {
       if (msg.title) {
@@ -128,7 +128,7 @@ export class DialogService {
   }
 
   error(msg: (MSG | string)) {
-    if (typeof msg === 'string') {
+    if (typeof msg === "string") {
       this.toastr.error(msg);
     } else {
       if (msg.title) {
@@ -139,11 +139,11 @@ export class DialogService {
     }
   }
 
-  prompt(option?: Option) {
+  prompt(option: Option) {
     // ToDo: use dialog type to fit for requirements
-    this.Dialog.open(DialogComponent, {
-        height: (option.height || this.defaultOption.height).toString() + 'px',
-        width: (option.width || this.defaultOption.width).toString() + 'px',
+    this.Dialog.open(DialogProvider, {
+        height: (option.height || this.defaultOption.height).toString() + "px",
+        width: (option.width || this.defaultOption.width).toString() + "px",
         data: option
       }
     );
@@ -151,9 +151,9 @@ export class DialogService {
 }
 
 @Component({
-  selector: 'dialog-dialog',
-  templateUrl: 'dialog.html',
-  styleUrls: ['dialog.scss']
+  selector: "dialog-dialog",
+  templateUrl: "dialog.html",
+  styleUrls: ["dialog.scss"]
 })
 export class DialogProvider {
   constructor(public dialogRef: MatDialogRef<AlertComponent>,
@@ -166,9 +166,9 @@ export class DialogProvider {
 }
 
 @Component({
-  selector: 'dialog-alert',
-  templateUrl: 'alert.html',
-  styleUrls: ['./alert.scss']
+  selector: "dialog-alert",
+  templateUrl: "alert.html",
+  styleUrls: ["./alert.scss"]
 })
 export class AlertComponent {
   data: any;
@@ -196,4 +196,4 @@ export class AlertComponent {
 //   }
 // }
 
-export const DialogComponent = [AlertComponent, DialogComponent];
+export const DialogComponent = [AlertComponent, DialogProvider];
