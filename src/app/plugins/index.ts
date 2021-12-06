@@ -12,6 +12,7 @@ import {CdkTreeModule} from "@angular/cdk/tree";
 // import {ContextMenuModule} from 'ngx-contextmenu';
 import {AngularSplitModule} from "angular-split";
 import {DataTablesModule} from "angular-datatables";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import {DataTablesModule} from "angular-datatables";
     DataTablesModule
   ],
   exports: [
+    FormsModule,
     MaterialModule,
     NgProgressModule,
     AngularSplitModule
