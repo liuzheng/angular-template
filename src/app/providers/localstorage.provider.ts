@@ -6,11 +6,11 @@ export class LocalstorageProvider {
 
   }
 
-  get(key: string, defaultvalue?: string): string {
+  getItem(key: string, defaultvalue?: string): string {
     return <string>(localStorage.getItem(key) || defaultvalue);
   }
 
-  set(key: string, value: string) {
+  setItem(key: string, value: string) {
     return localStorage.setItem(key, value);
   }
 

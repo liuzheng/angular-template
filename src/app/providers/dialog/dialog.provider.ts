@@ -199,7 +199,8 @@ export class AlertComponent {
 @NgModule({
   providers: [
     AlertComponent,
-    DialogComponent
+    DialogComponent,
+    DialogService
   ],
 })
 export class DialogProvider {

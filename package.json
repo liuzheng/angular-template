@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --disable-host-check",
-    "build": "ng build",
-    "ng:serve": "ng serve --proxy-config proxy.conf.json",
+    "start": "npm ng:serve",
+    "build": "npm ng:build",
+    "ng:serve": "ng serve --proxy-config proxy.conf.json --host 0.0.0.0 --disable-host-check",
     "ng:build": "ng build",
     "ng:stats": "ng build --stats-json",
     "watch": "ng build --watch --configuration development",

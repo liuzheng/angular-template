@@ -49,7 +49,7 @@ export class AppProvider {
 
   translate(lang: string) {
     this.translater.use(lang);
-    this.localStorage.set("lang", lang);
+    this.localStorage.setItem("lang", lang);
   }
 
   transEN() {
