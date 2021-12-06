@@ -1,5 +1,5 @@
 <div class="alert">
   <h1 mat-dialog-title>Alert</h1>
-  <p>{{data.content|translate}}</p>
+  <div [innerHTML]="data.content"></div>
   <button mat-raised-button (click)="onNoClick()">Close</button>
 </div>

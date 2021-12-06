@@ -10,6 +10,7 @@ import {ExampleAceEditorComponent} from "./ace-editor/ace-editor.component"
 import {ExampleTerminalComponent} from "./terminal/terminal.component";
 import {ExampleMetroUIComponent} from "./metroui/metroui.component";
 import {ExampleContextMenuComponent} from "./context-menu/context-menu.component";
+import {PipesModule} from "../pipes";
 
 export const ExampleRoutes: Routes = [
   {path: "example/datatable", component: ExampleDatatableComponent},
@@ -22,11 +23,12 @@ export const ExampleRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    PluginModule,
-    RouterModule
-  ],
+    imports: [
+        BrowserModule,
+        PluginModule,
+        RouterModule,
+        PipesModule
+    ],
   declarations: [
     ExampleDatatableComponent,
     ExampleMatMenuComponent,

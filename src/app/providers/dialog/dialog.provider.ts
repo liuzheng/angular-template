@@ -200,7 +200,7 @@ export class AlertComponent {
   providers: [
     AlertComponent,
     DialogComponent
-  ]
+  ],
 })
 export class DialogProvider {
 }
