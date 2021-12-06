@@ -38,6 +38,7 @@ import {DataTablesModule} from "angular-datatables";
   exports: [
     MaterialModule,
     NgProgressModule,
+    AngularSplitModule
   ]
 })
 export class PluginModule {
