@@ -23,12 +23,12 @@ export const ExampleRoutes: Routes = [
 ];
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        PluginModule,
-        RouterModule,
-        PipesModule
-    ],
+  imports: [
+    BrowserModule,
+    PluginModule,
+    RouterModule,
+    PipesModule
+  ],
   declarations: [
     ExampleDatatableComponent,
     ExampleMatMenuComponent,
