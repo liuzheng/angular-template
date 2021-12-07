@@ -1,18 +1,17 @@
+import {CdkTreeModule} from "@angular/cdk/tree";
 import {NgModule} from "@angular/core";
-
-import {MaterialModule} from "./MaterialModule.component";
-import {LoggerModule, NgxLoggerLevel} from "ngx-logger";
-// import {NgxDatatableModule} from '@swimlane/ngx-datatable';
+import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {NgProgressModule} from "ngx-progressbar";
 
+import {DataTablesModule} from "angular-datatables";
+import {AngularSplitModule} from "angular-split";
+import {LoggerModule, NgxLoggerLevel} from "ngx-logger";
+import {NgProgressModule} from "ngx-progressbar";
 import {ToastrModule} from "ngx-toastr";
 import {NgxEchartsModule} from "ngx-echarts";
-import {CdkTreeModule} from "@angular/cdk/tree";
-// import {ContextMenuModule} from 'ngx-contextmenu';
-import {AngularSplitModule} from "angular-split";
-import {DataTablesModule} from "angular-datatables";
-import {FormsModule} from "@angular/forms";
+import {QrCodeModule} from "ng-qrcode";
+
+import {MaterialModule} from "./MaterialModule.component";
 
 @NgModule({
   imports: [
@@ -27,9 +26,7 @@ import {FormsModule} from "@angular/forms";
     // NgxDatatableModule,
     // NgxUIModule,
     AngularSplitModule,
-    // FlexLayoutModule,
     ToastrModule.forRoot(), // ToastrModule added
-
     NgxEchartsModule,
     // ContextMenuModule.forRoot({
     //   useBootstrap4: true
@@ -40,7 +37,8 @@ import {FormsModule} from "@angular/forms";
     FormsModule,
     MaterialModule,
     NgProgressModule,
-    AngularSplitModule
+    AngularSplitModule,
+    QrCodeModule,
   ]
 })
 export class PluginModule {
