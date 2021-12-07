@@ -18,10 +18,10 @@ export class AppRootComponent {
               private app: AppProvider,
               private router: Router,
               private logger: LogProvider,
-              private global: Globals,
+              private globals: Globals,
               private localStorage: LocalstorageProvider,
   ) {
-    global.loglevel = eval(localStorage.getItem("logLevel", "0"))
+    globals.loglevel = parseInt(localStorage.getItem("logLevel", "0"), 10);
     translate.addLangs(["en", "cn"]);
     translate.setDefaultLang("en");
 
