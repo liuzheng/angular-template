@@ -2,9 +2,8 @@ import {Component} from "@angular/core";
 import {TranslateService} from "@ngx-translate/core";
 import {Router} from "@angular/router";
 
-import {AppProvider, LocalstorageProvider, LogProvider} from "../../providers";
-import {Globals} from "../../globals";
-import {baseHref} from "../../../environments/environment";
+import {AppProvider, LogProvider} from "../../providers";
+import {baseHref, environment} from "../../../environments/environment";
 
 @Component({
   selector: "app-root",
@@ -18,10 +17,12 @@ export class AppRootComponent {
               private app: AppProvider,
               private router: Router,
               private logger: LogProvider,
-              private globals: Globals,
-              private localStorage: LocalstorageProvider,
   ) {
-    logger.setLevel(0)
+    if (environment.production) {
+      logger.setLevel(0)
+    } else {
+      logger.setLevel(5)
+    }
     translate.addLangs(["en", "cn"]);
     translate.setDefaultLang("en");
 

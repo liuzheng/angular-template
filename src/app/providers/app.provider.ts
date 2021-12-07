@@ -1,22 +1,13 @@
-import {Injectable, OnInit} from "@angular/core";
+import {Injectable} from "@angular/core";
 import {Router} from "@angular/router";
 import {CookieService} from "ngx-cookie-service";
-// import "rxjs/add/operator/map";
-// import "rxjs/add/operator/catch";
 import {TranslateService} from "@ngx-translate/core";
-import {environment} from "../../environments/environment";
 import {LogProvider} from "./log.provider";
 import {LocalstorageProvider} from "./localstorage.provider";
-// import {DialogService} from "../elements/dialog/dialog.service";
-import {HttpErrorResponse} from "@angular/common/http";
 import {Globals} from "../globals";
-
-// declare function unescape(s: string): string;
 
 @Injectable()
 export class AppProvider {
-  // user:User = user  ;
-
   constructor(private router: Router,
               private logger: LogProvider,
               private globals: Globals,
