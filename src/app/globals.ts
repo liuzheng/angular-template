@@ -1,5 +1,6 @@
 'use strict';
 // import {User} from './backend/variables';
+export let LogLevel: number = 0
 
 export class Globals {
   // User: User = {

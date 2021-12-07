@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 import {TranslateService} from "@ngx-translate/core";
 import {Router} from "@angular/router";
 
-import {AppProvider, LogProvider} from "../../providers";
+import {AppProvider, LocalstorageProvider, LogProvider} from "../../providers";
 import {Globals} from "../../globals";
 import {baseHref} from "../../../environments/environment";
 
@@ -19,7 +19,9 @@ export class AppRootComponent {
               private router: Router,
               private logger: LogProvider,
               private global: Globals,
+              private localStorage: LocalstorageProvider,
   ) {
+    global.loglevel = eval(localStorage.getItem("logLevel", "0"))
     translate.addLangs(["en", "cn"]);
     translate.setDefaultLang("en");
 
