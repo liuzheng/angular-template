@@ -21,7 +21,7 @@ export class AppRootComponent {
               private globals: Globals,
               private localStorage: LocalstorageProvider,
   ) {
-    globals.loglevel = parseInt(localStorage.getItem("logLevel", "0"), 10);
+    logger.setLevel(0)
     translate.addLangs(["en", "cn"]);
     translate.setDefaultLang("en");
 
