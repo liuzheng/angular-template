@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms"; // <-- NgModel lives here
+import {FormsModule} from "@angular/forms"; // <-- NgModel lives here
 import {HttpClientModule} from "@angular/common/http";
 
 import {AppRoutingModule} from "./app-routing.module";
@@ -16,7 +16,6 @@ import {PartModule} from "./parts";
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
     AppRoutingModule,
     PipesModule,
     PluginModule,
