@@ -54,11 +54,10 @@ ng update @angular/material ace-builds animate.css bootstrap echarts metro4 mome
 | echarts | Apache ECharts is a free, powerful charting and visualization library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender, which is a whole new lightweight canvas library. |
 | metro4 | Sleek, intuitive, and powerful front-end framework for faster and easier web development. Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style. |
 | moment | A JavaScript date library for parsing, validating, manipulating, and formatting dates. |
-| ngx-echarts | |
-| ngx-perfect-scrollbar | |
-| ngx-progressbar | |
-| ngx-toastr | |
-| xterm | |
+| ngx-echarts | Angular directive for Apache ECharts (incubating) (version >= 3.x) (The project is renamed from angular2-echarts) |
+| ngx-progressbar | A nanoscopic progress bar. Featuring realistic trickle animations to convince your users that something is happening! |
+| ngx-toastr | Toastr for Angular |
+| xterm | Full xterm terminal, in your browser |
 ### communication
 ```
 ng update bufferutil socket.io socket.io-client
