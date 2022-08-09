@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'qrcode',
+  selector: 'qr',
   templateUrl: './qrcode.component.html',
-  styleUrls: ['./qrcode.component.sass']
+  styleUrls: ['./qrcode.component.sass'],
 })
 export class PluginQrCodeComponent implements OnInit {
-
+  @Input() data: string="";
+  @Input() width: number=256;
+  
   constructor() { }
 
   ngOnInit(): void {

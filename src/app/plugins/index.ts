@@ -12,6 +12,7 @@ import { NgxEchartsModule } from "ngx-echarts";
 
 import { MaterialModule } from "./MaterialModule.component";
 
+import { QRCodeModule } from 'angularx-qrcode';
 import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
 
 @NgModule({
@@ -32,13 +33,17 @@ import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
     // ContextMenuModule.forRoot({
     //   useBootstrap4: true
     // }),
-    DataTablesModule
+    DataTablesModule,
+    QRCodeModule,
   ],
   exports: [
     FormsModule,
     MaterialModule,
     NgProgressModule,
     AngularSplitModule,
+    QRCodeModule,
+  ],
+  declarations: [
     PluginQrCodeComponent,
   ]
 })
