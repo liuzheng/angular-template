@@ -39,7 +39,7 @@ ng update @angular/cdk @angular/material @ngx-translate/http-loader ace-builds a
 | roboto-fontface | |
 
 ### stylesheets
-| package | usage |
+| package | introduction |
 | --- | --- |
 | animate.css | |
 | bootstrap | |
@@ -52,21 +52,21 @@ ng update @angular/cdk @angular/material @ngx-translate/http-loader ace-builds a
 | ngx-toastr | |
 | xterm | |
 ### communication
-| package | usage |
+| package | introduction |
 | --- | --- |
+| bufferutil | bufferutil is what makes WebSocket fast. It provides some utilities to efficiently perform some operations such as masking and unmasking the data payload of WebSocket frames. | 
 | socket.io | |
 | socket.io-client | |
 
 
-| package | usage |
+| package | introduction |
 | --- | --- |
 
 | ace-builds | |
 | angular-datatables | |
 | angular-split | |
 | angularx-qrcode | |
-| bufferutil | | 
-| codemirror | |
+| codemirror | This package provides an example configuration for the CodeMirror code editor. The actual editor is implemented in the various packages under the @codemirror scope, which this package depends on. |
 | core-js | |
 | datatables.net | |
 | datatables.net-dt | |
