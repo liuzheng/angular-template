@@ -38,8 +38,8 @@ ng update font-awesome roboto-fontface
 ```
 | package | usage |
 | --- | --- |
-| font-awesome | |
-| roboto-fontface | |
+| font-awesome | Font Awesome is a full suite of 675 pictographic icons for easy scalable vector graphics on websites, created and maintained by Dave Gandy. Stay up to date with the latest release and announcements on Twitter: @fontawesome. |
+| roboto-fontface | A simple package providing the Roboto fontface. The font was created by Christian Robertson. |
 
 ### stylesheets
 ```
