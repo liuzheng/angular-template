@@ -27,7 +27,7 @@
     "@ngx-translate/http-loader": "^7.0.0",
     "@popperjs/core": "^2.11.5",
     "@types/neffos.js": "^0.1.2",
-    "ace-builds": "^1.9.3",
+    "ace-builds": "^1.9.4",
     "angular-datatables": "^14.0.0",
     "angular-split": "^13.2.0",
     "animate.css": "^4.1.1",
