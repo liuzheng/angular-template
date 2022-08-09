@@ -47,12 +47,12 @@ ng update @angular/material ace-builds animate.css bootstrap echarts metro4 mome
 ```
 | package | introduction |
 | --- | --- |
-| @angular/material | |
-| ace-builds | |
+| @angular/material | The sources for this package are in the main Angular Material repo. Please file issues and pull requests against that repo. |
+| ace-builds | Ace is a code editor written in JavaScript. |
 | animate.css | |
-| bootstrap | |
-| echarts | |
-| metro4 | |
+| bootstrap | Sleek, intuitive, and powerful front-end framework for faster and easier web development. |
+| echarts | Apache ECharts is a free, powerful charting and visualization library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender, which is a whole new lightweight canvas library. |
+| metro4 | Sleek, intuitive, and powerful front-end framework for faster and easier web development. Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style. |
 | moment | A JavaScript date library for parsing, validating, manipulating, and formatting dates. |
 | ngx-echarts | |
 | ngx-perfect-scrollbar | |
