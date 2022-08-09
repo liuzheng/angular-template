@@ -1,17 +1,18 @@
-import {CdkTreeModule} from "@angular/cdk/tree";
-import {NgModule} from "@angular/core";
-import {FormsModule} from "@angular/forms";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { CdkTreeModule } from "@angular/cdk/tree";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import {DataTablesModule} from "angular-datatables";
-import {AngularSplitModule} from "angular-split";
-import {LoggerModule, NgxLoggerLevel} from "ngx-logger";
-import {NgProgressModule} from "ngx-progressbar";
-import {ToastrModule} from "ngx-toastr";
-import {NgxEchartsModule} from "ngx-echarts";
-import {QrCodeModule} from "ng-qrcode";
+import { DataTablesModule } from "angular-datatables";
+import { AngularSplitModule } from "angular-split";
+import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
+import { NgProgressModule } from "ngx-progressbar";
+import { ToastrModule } from "ngx-toastr";
+import { NgxEchartsModule } from "ngx-echarts";
 
-import {MaterialModule} from "./MaterialModule.component";
+import { MaterialModule } from "./MaterialModule.component";
+
+import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
 
 @NgModule({
   imports: [
@@ -38,7 +39,7 @@ import {MaterialModule} from "./MaterialModule.component";
     MaterialModule,
     NgProgressModule,
     AngularSplitModule,
-    QrCodeModule,
+    PluginQrCodeComponent,
   ]
 })
 export class PluginModule {

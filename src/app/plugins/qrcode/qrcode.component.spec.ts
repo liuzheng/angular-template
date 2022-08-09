@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QrcodeComponent } from './qrcode.component';
+import { PluginQrCodeComponent } from './qrcode.component';
 
-describe('QrcodeComponent', () => {
-  let component: QrcodeComponent;
-  let fixture: ComponentFixture<QrcodeComponent>;
+describe('PluginQrCodeComponent', () => {
+  let component: PluginQrCodeComponent;
+  let fixture: ComponentFixture<PluginQrCodeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QrcodeComponent ]
+      declarations: [ PluginQrCodeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QrcodeComponent);
+    fixture = TestBed.createComponent(PluginQrCodeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

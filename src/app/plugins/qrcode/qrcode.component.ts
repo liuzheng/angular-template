@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-qrcode',
+  selector: 'qrcode',
   templateUrl: './qrcode.component.html',
   styleUrls: ['./qrcode.component.sass']
 })
-export class QrcodeComponent implements OnInit {
+export class PluginQrCodeComponent implements OnInit {
 
   constructor() { }
 
