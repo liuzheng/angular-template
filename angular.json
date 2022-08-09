@@ -20,6 +20,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "qrcode",
+              "ace-builds",
+              "xterm",
+              "xterm-addon-fit",
+              "xterm-addon-web-links",
+              "uuid-js/lib/uuid.js"
+            ],
             "outputPath": "deploy/app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -189,6 +197,5 @@
         }
       }
     }
-  },
-  "defaultProject": "angular-template"
+  }
 }
