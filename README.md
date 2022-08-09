@@ -28,53 +28,68 @@ update base angular package
 ng update @angular/core@14 @angular/cli@14
 ```
 update relative packages
-
+```
+ng update @angular/cdk @angular/material @ngx-translate/http-loader ace-builds angular-datatables 
+```
 ## Third party packages
+### fonts
 | package | usage |
 | --- | --- |
+| font-awesome | |
+| roboto-fontface | |
+
+### stylesheets
+| package | usage |
+| --- | --- |
+| animate.css | |
+| bootstrap | |
+| echarts | |
+| metro4 | |
+| moment | |
+| ngx-echarts | |
+| ngx-perfect-scrollbar | |
+| ngx-progressbar | |
+| ngx-toastr | |
+| xterm | |
+### communication
+| package | usage |
+| --- | --- |
+| socket.io | |
+| socket.io-client | |
+
+
+| package | usage |
+| --- | --- |
+
 | ace-builds | |
 | angular-datatables | |
 | angular-split | |
 | angularx-qrcode | |
-| animate.css | |
-| bootstrap | |
 | bufferutil | | 
 | codemirror | |
 | core-js | |
 | datatables.net | |
 | datatables.net-dt | |
-| echarts | |
-| font-awesome | |
 | hammerjs | |
 | jquery | |
-| metro4 | |
 | mkdirp | |
-| moment | |
 | moment-timezone | |
 | neffos.js | |
 | ng-qrcode | |
 | ngx-cookie-service | |
-| ngx-echarts | |
 | ngx-logger | |
-| ngx-perfect-scrollbar | |
-| ngx-progressbar | |
-| ngx-toastr | |
 | node-gyp | |
 | popper.js | |
-| roboto-fontface | |
 | rxjs | |
-| socket.io | |
-| socket.io-client | |
 | tslib | |
 | utf-8-validate | |
 | uuid | |
 | uuid-js | |
-| xterm | |
+| zone.js | |
 | xterm-addon-attach | |
 | xterm-addon-fit | |
 | xterm-addon-web-links | |
 | zmodem.js | |
-| zone.js | |
 
 ## Further help
 
