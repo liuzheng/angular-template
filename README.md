@@ -27,13 +27,13 @@ update base angular package
 ```
 ng update @angular/core@14 @angular/cli@14
 ```
-update relative packages
+update other packages
 ```
 ng update @angular/cdk @ngx-translate/http-loader core-js hammerjs jquery node-gyp rxjs tslib zone.js
 ```
 
 ## Third party packages
-### fonts
+### Fonts
 ```
 ng update font-awesome roboto-fontface
 ```
@@ -42,7 +42,7 @@ ng update font-awesome roboto-fontface
 | font-awesome | Font Awesome is a full suite of 675 pictographic icons for easy scalable vector graphics on websites, created and maintained by Dave Gandy. Stay up to date with the latest release and announcements on Twitter: @fontawesome. |
 | roboto-fontface | A simple package providing the Roboto fontface. The font was created by Christian Robertson. |
 
-### stylesheets
+### Stylesheets
 ```
 ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr xterm
 ```
@@ -61,7 +61,7 @@ ng update @angular/material ace-builds animate.css bootstrap echarts metro4 mome
 | ngx-progressbar | A nanoscopic progress bar. Featuring realistic trickle animations to convince your users that something is happening! |
 | ngx-toastr | Toastr for Angular |
 | xterm | Full xterm terminal, in your browser |
-### communication
+### Communication
 ```
 ng update bufferutil socket.io socket.io-client neffos.js
 ``` 
@@ -74,7 +74,7 @@ ng update bufferutil socket.io socket.io-client neffos.js
 
 ### Tools and others
 ```
-ng update angular-datatables angular-split angularx-qrcode codemirror 
+ng update angular-datatables angular-split angularx-qrcode codemirror ngx-cookie-service ngx-logger @popperjs/core utf-8-validate @types/uuid xterm-addon-attach xterm-addon-fit xterm-addon-web-links zmodem.js
 ```
 | package | introduction |
 | --- | --- |
@@ -86,8 +86,6 @@ ng update angular-datatables angular-split angularx-qrcode codemirror
 | ngx-cookie-service | Angular service to read, set and delete browser cookies. Originally based on the ng2-cookies library. The experienced team behind Studytube will take care of our cookie service from now on. |
 | ngx-logger | NGX Logger is a simple logging module for angular (currently supports angular 6+). It allows "pretty print" to the console, as well as allowing log messages to be POSTed to a URL for server-side logging. |
 | @popperjs/core | |
-| rxjs | |
-| tslib | |
 | utf-8-validate | Check if a buffer contains valid UTF-8 encoded text. |
 | @types/uuid | |
 | xterm-addon-attach | |
