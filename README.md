@@ -29,8 +29,9 @@ ng update @angular/core@14 @angular/cli@14
 ```
 update relative packages
 ```
-ng update @angular/cdk @ngx-translate/http-loader
+ng update @angular/cdk @ngx-translate/http-loader core-js hammerjs jquery node-gyp rxjs tslib zone.js
 ```
+
 ## Third party packages
 ### fonts
 ```
@@ -43,62 +44,56 @@ ng update font-awesome roboto-fontface
 
 ### stylesheets
 ```
-ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment ngx-echarts ngx-progressbar ngx-toastr xterm
+ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr xterm
 ```
 | package | introduction |
 | --- | --- |
 | @angular/material | The sources for this package are in the main Angular Material repo. Please file issues and pull requests against that repo. |
+| @popperjs/core | Given an element, such as a button, and a tooltip element describing it, Popper will automatically put the tooltip in the right place near the button. |
 | ace-builds | Ace is a code editor written in JavaScript. |
 | animate.css | |
 | bootstrap | Sleek, intuitive, and powerful front-end framework for faster and easier web development. |
 | echarts | Apache ECharts is a free, powerful charting and visualization library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender, which is a whole new lightweight canvas library. |
 | metro4 | Sleek, intuitive, and powerful front-end framework for faster and easier web development. Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style. |
 | moment | A JavaScript date library for parsing, validating, manipulating, and formatting dates. |
+| moment-timezone | Parse and display moments in any timezone. |
 | ngx-echarts | Angular directive for Apache ECharts (incubating) (version >= 3.x) (The project is renamed from angular2-echarts) |
 | ngx-progressbar | A nanoscopic progress bar. Featuring realistic trickle animations to convince your users that something is happening! |
 | ngx-toastr | Toastr for Angular |
 | xterm | Full xterm terminal, in your browser |
 ### communication
 ```
-ng update bufferutil socket.io socket.io-client
+ng update bufferutil socket.io socket.io-client neffos.js
 ``` 
 | package | introduction |
 | --- | --- |
 | bufferutil | bufferutil is what makes WebSocket fast. It provides some utilities to efficiently perform some operations such as masking and unmasking the data payload of WebSocket frames. | 
-| socket.io | |
-| socket.io-client | |
+| socket.io | Node.js realtime framework server |
+| socket.io-client | Realtime application framework client |
+| neffos.js |neffos.js is the client-side javascript library for the neffos real-time framework. It can run through any modern browser, browserify and nodejs. |
 
-
+### Tools and others
+```
+ng update angular-datatables angular-split angularx-qrcode codemirror 
+```
 | package | introduction |
 | --- | --- |
-
-| angular-datatables | |
-| angular-split | |
-| angularx-qrcode | |
+| angular-datatables | Angular directive for DataTables |
+| angular-split | Angular UI library to split views and allow dragging to resize areas using CSS flexbox layout. |
+| angularx-qrcode | angularx-qrcode - a fast and easy-to-use Ivy compatible Ionic and Angular QR Code Generator library |
 | codemirror | This package provides an example configuration for the CodeMirror code editor. The actual editor is implemented in the various packages under the @codemirror scope, which this package depends on. |
-| core-js | |
-| datatables.net | |
-| datatables.net-dt | |
-| hammerjs | |
-| jquery | |
-| mkdirp | |
-| moment-timezone | |
-| neffos.js | |
-| ng-qrcode | |
-| ngx-cookie-service | |
-| ngx-logger | |
-| node-gyp | |
-| popper.js | |
+| ~~ng-qrcode~~ | Simple AOT compatible QR code generator for your Angular project |
+| ngx-cookie-service | Angular service to read, set and delete browser cookies. Originally based on the ng2-cookies library. The experienced team behind Studytube will take care of our cookie service from now on. |
+| ngx-logger | NGX Logger is a simple logging module for angular (currently supports angular 6+). It allows "pretty print" to the console, as well as allowing log messages to be POSTed to a URL for server-side logging. |
+| @popperjs/core | |
 | rxjs | |
 | tslib | |
-| utf-8-validate | |
-| uuid | |
-| uuid-js | |
-| zone.js | |
+| utf-8-validate | Check if a buffer contains valid UTF-8 encoded text. |
+| @types/uuid | |
 | xterm-addon-attach | |
 | xterm-addon-fit | |
 | xterm-addon-web-links | |
-| zmodem.js | |
+| zmodem.js | ZMODEM file transfers in JavaScript |
 
 ## Further help
 
