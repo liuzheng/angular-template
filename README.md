@@ -29,29 +29,40 @@ ng update @angular/core@14 @angular/cli@14
 ```
 update relative packages
 ```
-ng update @angular/cdk @angular/material @ngx-translate/http-loader ace-builds angular-datatables 
+ng update @angular/cdk @ngx-translate/http-loader
 ```
 ## Third party packages
 ### fonts
+```
+ng update font-awesome roboto-fontface
+```
 | package | usage |
 | --- | --- |
 | font-awesome | |
 | roboto-fontface | |
 
 ### stylesheets
+```
+ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment ngx-echarts ngx-perfect-scrollbar ngx-progressbar ngx-toastr xterm
+```
 | package | introduction |
 | --- | --- |
+| @angular/material | |
+| ace-builds | |
 | animate.css | |
 | bootstrap | |
 | echarts | |
 | metro4 | |
-| moment | |
+| moment | A JavaScript date library for parsing, validating, manipulating, and formatting dates. |
 | ngx-echarts | |
 | ngx-perfect-scrollbar | |
 | ngx-progressbar | |
 | ngx-toastr | |
 | xterm | |
 ### communication
+```
+ng update bufferutil socket.io socket.io-client
+``` 
 | package | introduction |
 | --- | --- |
 | bufferutil | bufferutil is what makes WebSocket fast. It provides some utilities to efficiently perform some operations such as masking and unmasking the data payload of WebSocket frames. | 
@@ -62,7 +73,6 @@ ng update @angular/cdk @angular/material @ngx-translate/http-loader ace-builds a
 | package | introduction |
 | --- | --- |
 
-| ace-builds | |
 | angular-datatables | |
 | angular-split | |
 | angularx-qrcode | |
