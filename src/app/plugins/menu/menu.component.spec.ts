@@ -1,18 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExampleProgressComponent } from './progress.component';
+import { PluginMenuComponent } from './menu.component';
 
-describe('ExampleProgressComponent', () => {
-  let component: ExampleProgressComponent;
-  let fixture: ComponentFixture<ExampleProgressComponent>;
+describe('PluginMenuComponent', () => {
+  let component: PluginMenuComponent;
+  let fixture: ComponentFixture<PluginMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExampleProgressComponent ]
+      declarations: [ PluginMenuComponent ]
     })
     .compileComponents();
+  });
 
-    fixture = TestBed.createComponent(ExampleProgressComponent);
+  beforeEach(() => {
+    fixture = TestBed.createComponent(PluginMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -14,6 +14,9 @@ import { MaterialModule } from "./MaterialModule.component";
 
 import { QRCodeModule } from 'angularx-qrcode';
 import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
+import { PluginEditorComponent } from "./ace-editor/ace-editor.component";
+import { PluginTerminalComponent } from "./terminal/terminal.component";
+import { PluginProgressComponent } from "./progress/progress.component";
 
 @NgModule({
   imports: [
@@ -34,17 +37,23 @@ import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
     //   useBootstrap4: true
     // }),
     DataTablesModule,
+    NgProgressModule,
     QRCodeModule,
   ],
   exports: [
     FormsModule,
     MaterialModule,
-    NgProgressModule,
     AngularSplitModule,
-    QRCodeModule,
+    PluginQrCodeComponent,
+    PluginEditorComponent,
+    PluginTerminalComponent,
+    PluginProgressComponent,
   ],
   declarations: [
     PluginQrCodeComponent,
+    PluginEditorComponent,
+    PluginTerminalComponent,
+    PluginProgressComponent,
   ]
 })
 export class PluginModule {

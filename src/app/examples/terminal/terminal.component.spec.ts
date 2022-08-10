@@ -11,9 +11,7 @@ describe('ExampleTerminalComponent', () => {
       declarations: [ ExampleTerminalComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ExampleTerminalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

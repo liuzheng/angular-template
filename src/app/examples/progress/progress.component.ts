@@ -1,22 +1,15 @@
-import {Component, OnInit, AfterViewInit, ViewChild} from "@angular/core";
-import {NgProgressComponent} from "ngx-progressbar";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "example-progress",
-  templateUrl: "./progress.component.html",
-  styleUrls: ["./progress.component.sass"]
+  selector: 'example-progress',
+  templateUrl: './progress.component.html',
+  styleUrls: ['./progress.component.sass']
 })
-export class ExampleProgressComponent implements OnInit, AfterViewInit {
-  @ViewChild(NgProgressComponent) progressBar!: NgProgressComponent;
+export class ExampleProgressComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngAfterViewInit(): void {
-    this.progressBar.start();
-    // this.progressBar.complete()
-  }
 }

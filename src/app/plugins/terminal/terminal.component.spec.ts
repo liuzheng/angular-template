@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExampleAceEditorComponent } from './ace-editor.component';
+import { PluginTerminalComponent } from './terminal.component';
 
-describe('ExampleAceEditorComponent', () => {
-  let component: ExampleAceEditorComponent;
-  let fixture: ComponentFixture<ExampleAceEditorComponent>;
+describe('PluginTerminalComponent', () => {
+  let component: PluginTerminalComponent;
+  let fixture: ComponentFixture<PluginTerminalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExampleAceEditorComponent ]
+      declarations: [ PluginTerminalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExampleAceEditorComponent);
+    fixture = TestBed.createComponent(PluginTerminalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExampleProgressComponent } from './progress.component';
+import { ExampleEditorComponent } from './editor.component';
 
-describe('ExampleProgressComponent', () => {
-  let component: ExampleProgressComponent;
-  let fixture: ComponentFixture<ExampleProgressComponent>;
+describe('ExampleEditorComponent', () => {
+  let component: ExampleEditorComponent;
+  let fixture: ComponentFixture<ExampleEditorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExampleProgressComponent ]
+      declarations: [ ExampleEditorComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExampleProgressComponent);
+    fixture = TestBed.createComponent(ExampleEditorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

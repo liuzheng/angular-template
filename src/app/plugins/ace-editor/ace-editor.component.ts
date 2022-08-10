@@ -2,11 +2,11 @@ import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from "@angular/
 import * as ace from "ace-builds";
 // todo: npm i ngx-ace-wrapper
 @Component({
-  selector: "example-ace-editor",
+  selector: "at-editor",
   templateUrl: "./ace-editor.component.html",
   styleUrls: ["./ace-editor.component.sass"]
 })
-export class ExampleAceEditorComponent implements OnInit, AfterViewInit {
+export class PluginEditorComponent implements OnInit, AfterViewInit {
   @ViewChild("editor") private editor!: ElementRef<HTMLElement>;
 
   constructor() {
