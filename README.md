@@ -33,6 +33,11 @@ ng update @angular/cdk @ngx-translate/http-loader core-js hammerjs jquery node-g
 ```
 
 ## Third party packages
+### devDependencies
+```
+ng update @angular-devkit/build-angular @angular/cli @angular/compiler-cli @types/datatables.net @types/jquery @types/jasmine @types/node jasmine-core karma karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter typescript webpack-bundle-analyzer
+```
+
 ### Fonts
 ```
 ng update font-awesome roboto-fontface
