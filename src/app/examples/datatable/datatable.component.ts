@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHandler} from "@angular/common/http";
 
 @Component({
   selector: "example-datatable",

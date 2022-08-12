@@ -1,9 +1,9 @@
-import {Component} from "@angular/core";
-import {TranslateService} from "@ngx-translate/core";
-import {Router} from "@angular/router";
+import { Component } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
+import { Router } from "@angular/router";
 
-import {AppProvider, LogProvider} from "../../providers";
-import {baseHref, environment} from "../../../environments/environment";
+import { AppProvider, LogProvider } from "../../providers";
+import { baseHref, environment } from "../../../environments/environment";
 
 @Component({
   selector: "app-root",
@@ -14,9 +14,9 @@ export class AppRootComponent {
   browserLang: any;
 
   constructor(private translate: TranslateService,
-              private app: AppProvider,
-              private router: Router,
-              private logger: LogProvider,
+    private app: AppProvider,
+    private router: Router,
+    private logger: LogProvider,
   ) {
     if (environment.production) {
       logger.setLevel(0)

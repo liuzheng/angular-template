@@ -9,7 +9,6 @@ import { PipesModule } from "./pipes";
 import { ProviderModule } from "./providers"
 import { PluginModule } from "./plugins";
 import { ExamplesModule } from "./examples";
-import { PartModule } from "./parts";
 
 @NgModule({
   imports: [
@@ -21,7 +20,6 @@ import { PartModule } from "./parts";
     PluginModule,
     ProviderModule,
     ExamplesModule,
-    PartModule,
     PageModule
   ],
   declarations: [

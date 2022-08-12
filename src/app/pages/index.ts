@@ -5,9 +5,9 @@ import {PageIndexComponent} from "./index/index.component"
 import {PageBlankComponent} from "./blank/blank.component";
 import {PageNotFoundComponent} from "./not-found/not-found.component";
 
-import {PartModule} from "../parts";
 import {AppRootComponent} from "./root/root.component";
 import {PluginModule} from "../plugins";
+import { Globals } from "../globals";
 
 export {AppRootComponent} from "./root/root.component"
 
@@ -19,7 +19,6 @@ export const PageRoutes: Routes = [
 
 @NgModule({
   imports: [
-    PartModule,
     PluginModule,
     RouterModule,
   ],

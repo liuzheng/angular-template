@@ -1,13 +1,13 @@
-import {Injectable} from "@angular/core";
-import {NGXLogger} from "ngx-logger";
-import {Globals} from "../globals";
-import {LocalstorageProvider} from "./localstorage.provider";
+import { Injectable } from "@angular/core";
+import { NGXLogger } from "ngx-logger";
+import { Globals } from "../globals";
+import { LocalstorageProvider } from "./localstorage.provider";
 
 @Injectable()
 export class LogProvider {
   constructor(private logger: NGXLogger,
-              private globals: Globals,
-              private localStorage: LocalstorageProvider) {
+    private globals: Globals,
+    private localStorage: LocalstorageProvider) {
     // 0.- Level.OFF
     // 1.- Level.ERROR
     // 2.- Level.WARN
