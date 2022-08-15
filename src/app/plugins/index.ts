@@ -10,7 +10,8 @@ import { NgProgressModule } from "ngx-progressbar";
 import { ToastrModule } from "ngx-toastr";
 import { NgxEchartsModule } from "ngx-echarts";
 
-import { MaterialModule } from "./MaterialModule.component";
+import { MaterialModule } from "./Material.module";
+import { IconsModule } from "./Icons.module";
 
 import { QRCodeModule } from 'angularx-qrcode';
 import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
@@ -23,19 +24,15 @@ import { PluginProgressComponent } from "./progress/progress.component";
     CdkTreeModule,
     BrowserAnimationsModule,
     MaterialModule,
+    IconsModule,
     LoggerModule.forRoot({
       serverLoggingUrl: "/api/logs",
       level: NgxLoggerLevel.DEBUG,
       serverLogLevel: NgxLoggerLevel.ERROR
     }),
-    // NgxDatatableModule,
-    // NgxUIModule,
     AngularSplitModule,
     ToastrModule.forRoot(), // ToastrModule added
     NgxEchartsModule,
-    // ContextMenuModule.forRoot({
-    //   useBootstrap4: true
-    // }),
     DataTablesModule,
     NgProgressModule,
     QRCodeModule,

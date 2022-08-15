@@ -115,7 +115,7 @@
               }
             ],
             "styles": [
-              "src/styles/styles.sass"
+              "src/sass/styles.sass"
             ],
             "scripts": []
           },
@@ -190,7 +190,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/styles.sass"
+              "src/sass/styles.sass"
             ],
             "scripts": []
           }

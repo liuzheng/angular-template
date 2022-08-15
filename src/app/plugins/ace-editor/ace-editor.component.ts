@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef, Input, AfterViewInit } from "@angular/core";
 import * as ace from "ace-builds";
 // todo: npm i ngx-ace-wrapper
 @Component({
@@ -8,7 +8,8 @@ import * as ace from "ace-builds";
 })
 export class PluginEditorComponent implements OnInit, AfterViewInit {
   @ViewChild("editor") private editor!: ElementRef<HTMLElement>;
-
+  @Input() theme = "ace/theme/twilight";
+  @Input() mode ="ace/mode/html";
   constructor() {
   }
 
@@ -23,8 +24,8 @@ export class PluginEditorComponent implements OnInit, AfterViewInit {
       "assets/ace"
     );
     aceEditor.session.setValue("<h1>Ace Editor works great in Angular!</h1>");
-    aceEditor.setTheme("ace/theme/twilight");
-    aceEditor.session.setMode("ace/mode/html");
+    aceEditor.setTheme(this.theme);
+    aceEditor.session.setMode(this.mode);
     aceEditor.on("change", () => {
       console.log(aceEditor.getValue());
     });
