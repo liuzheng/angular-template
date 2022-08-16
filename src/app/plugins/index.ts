@@ -40,6 +40,7 @@ import { PluginProgressComponent } from "./progress/progress.component";
   exports: [
     FormsModule,
     MaterialModule,
+    IconsModule,
     AngularSplitModule,
     PluginQrCodeComponent,
     PluginEditorComponent,
