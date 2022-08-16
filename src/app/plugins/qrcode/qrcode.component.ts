@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PluginQrCodeComponent implements OnInit {
   @Input() data: string="";
-  @Input() width: number=256;
+  @Input() size: number=256;
   
   constructor() { }
 
