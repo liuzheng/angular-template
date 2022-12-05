@@ -25,7 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## update package dependencies
 update base angular package
 ```
-ng update @angular/core@14 @angular/cli@14
+ng update @angular/core@15 @angular/cli@15
 ```
 update other packages
 ```
