@@ -45,7 +45,7 @@
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.40",
     "neffos.js": "^0.1.26",
-    "ng-qrcode": "^7.0.0",
+    "ng-qrcode": "^8.0.1",
     "ngx-cookie-service": "^15.0.0",
     "ngx-echarts": "^15.0.1",
     "ngx-logger": "^5.0.11",
