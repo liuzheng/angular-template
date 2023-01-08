@@ -1,5 +1,5 @@
 import {Component, Inject, Injectable, NgModule, TemplateRef} from "@angular/core";
-import {MatDialogRef, MatDialogConfig, MatDialog, MAT_DIALOG_DATA} from "@angular/material/dialog"
+import {MatLegacyDialogRef as MatDialogRef, MatLegacyDialogConfig as MatDialogConfig, MatLegacyDialog as MatDialog, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA} from "@angular/material/legacy-dialog"
 import {ToastrService} from "ngx-toastr";
 import {ComponentType} from "@angular/cdk/portal";
 
