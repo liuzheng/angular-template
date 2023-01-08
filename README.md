@@ -29,7 +29,7 @@ ng update @angular/core@next @angular/cli@next
 ```
 update other packages
 ```
-ng update @angular/cdk @ngx-translate/http-loader core-js hammerjs jquery node-gyp rxjs tslib zone.js
+ng update @angular/cdk@14 @ngx-translate/http-loader core-js hammerjs jquery node-gyp rxjs tslib zone.js
 ```
 
 ## Third party packages
@@ -49,7 +49,7 @@ ng update font-awesome roboto-fontface
 
 ### Stylesheets
 ```
-ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr xterm
+ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr xterm xterm-addon-attach xterm-addon-fit xterm-addon-web-links
 ```
 | package | introduction |
 | --- | --- |
