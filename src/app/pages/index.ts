@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-import { PluginModule } from "@at/app/plugins";
+import { PluginModule } from "at/app/plugins";
 
 import { AppRootComponent } from "./root"
 import { PageNotFoundComponent } from "./not-found"

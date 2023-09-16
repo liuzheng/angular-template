@@ -28,7 +28,7 @@
     "@popperjs/core": "^2.11.6",
     "@types/neffos.js": "^0.1.2",
     "@types/uuid": "^9.0.0",
-    "@at": "file:src",
+    "at": "file:src",
     "ace-builds": "^1.14.0",
     "angular-datatables": "^15.0.0",
     "angular-split": "^14.1.0",
