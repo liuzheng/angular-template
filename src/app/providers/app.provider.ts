@@ -4,7 +4,7 @@ import {CookieService} from "ngx-cookie-service";
 import {TranslateService} from "@ngx-translate/core";
 import {LogProvider} from "./log.provider";
 import {LocalstorageProvider} from "./localstorage.provider";
-import {Globals} from "at/app/globals";
+import {Globals} from "@at/app/globals";
 
 @Injectable()
 export class AppProvider {

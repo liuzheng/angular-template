@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { NGXLogger } from "ngx-logger";
-import { Globals } from "at/app/globals";
+import { Globals } from "@at/app/globals";
 // import {DialogService, ElementDialogComponent} from './elements/dialog/dialog.service';
 // import {MAT_LABEL_GLOBAL_OPTIONS} from '@angular/material/core';
 
