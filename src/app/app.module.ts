@@ -4,7 +4,7 @@ import { FormsModule } from "@angular/forms"; // <-- NgModel lives here
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
-import { AppRootComponent, PageModule } from "./pages";
+import { PagesComponents, PageModule, AppRootComponent } from "./pages";
 import { PipesModule } from "./pipes";
 import { ProviderModule } from "./providers"
 import { PluginModule } from "./plugins";
@@ -21,7 +21,7 @@ import { PluginModule } from "./plugins";
     PageModule
   ],
   declarations: [
-    AppRootComponent,
+    ...PagesComponents,
   ],
   bootstrap: [AppRootComponent]
 })

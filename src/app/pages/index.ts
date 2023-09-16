@@ -1,11 +1,21 @@
-import {NgModule} from "@angular/core";
-import {Routes, RouterModule} from "@angular/router";
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-import {PluginModule} from "~/app/plugins";
+import { PluginModule } from "~/app/plugins";
 
-export {AppRootComponent} from "./root/root.component"
+import { AppRootComponent } from "./root"
+import { PageNotFoundComponent } from "./not-found"
+export { AppRootComponent } from "./root"
 
+export const PagesComponents = [
+  AppRootComponent,
+  PageNotFoundComponent
+]
 export const PageRoutes: Routes = [
+
+  { path: '', component: AppRootComponent },
+
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

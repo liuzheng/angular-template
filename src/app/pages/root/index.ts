@@ -3,7 +3,8 @@ import { TranslateService } from "@ngx-translate/core";
 import { Router } from "@angular/router";
 
 import { AppProvider, LogProvider } from "~/app/providers";
-import { baseHref, environment } from "~/environments/environment";
+import { production } from "~/environments/environment";
+import { baseHref } from "~/app/globals";
 
 @Component({
   selector: "app-root",
@@ -18,7 +19,7 @@ export class AppRootComponent {
     private router: Router,
     private logger: LogProvider,
   ) {
-    if (environment.production) {
+    if (production) {
       logger.setLevel(0)
     } else {
       logger.setLevel(5)

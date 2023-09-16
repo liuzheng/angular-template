@@ -1,13 +1,12 @@
-import {NgModule} from "@angular/core";
-import {RouterModule} from "@angular/router";
-import {appRoutes} from "~/environments/environment";
-
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import {  production } from "~/environments/environment";
+import { PageRoutes } from "./pages";
 @NgModule({
   imports: [
     RouterModule.forRoot(
-      appRoutes,
-      {enableTracing: false} // <-- debugging purposes only
-      // {enableTracing: !environment.production} // <-- debugging purposes only
+      PageRoutes,
+      { enableTracing: !production } 
     )
   ],
   exports: [RouterModule]
