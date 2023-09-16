@@ -1,6 +1,6 @@
 import {Routes} from "@angular/router";
 
-import {PageRoutes} from "../app/pages";
+import {PageRoutes} from "~/app/pages";
 
 export const environment = {
   production: true

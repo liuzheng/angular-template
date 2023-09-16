@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {RouterModule} from "@angular/router";
-import {appRoutes} from "../environments/environment";
+import {appRoutes} from "~/environments/environment";
 
 @NgModule({
   imports: [

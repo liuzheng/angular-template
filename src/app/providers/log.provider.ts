@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { NGXLogger } from "ngx-logger";
-import { Globals } from "../globals";
+import { Globals } from "~/app/globals";
 import { LocalstorageProvider } from "./localstorage.provider";
 
 @Injectable()

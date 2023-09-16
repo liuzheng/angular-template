@@ -1,7 +1,7 @@
 import {NgModule} from "@angular/core";
 import {Routes, RouterModule} from "@angular/router";
 
-import {PluginModule} from "../plugins";
+import {PluginModule} from "~/app/plugins";
 
 export {AppRootComponent} from "./root/root.component"
 
