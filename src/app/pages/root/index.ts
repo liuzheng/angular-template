@@ -2,9 +2,9 @@ import { Component } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { Router } from "@angular/router";
 
-import { AppProvider, LogProvider } from "~/app/providers";
-import { production } from "~/environments/environment";
-import { baseHref } from "~/app/globals";
+import { AppProvider, LogProvider } from "at/app/providers";
+import { production } from "at/environments/environment";
+import { baseHref } from "at/app/globals";
 
 @Component({
   selector: "app-root",

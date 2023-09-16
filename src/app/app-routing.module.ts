@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import {  production } from "~/environments/environment";
+import {  production } from "at/environments/environment";
 import { PageRoutes } from "./pages";
 @NgModule({
   imports: [
