@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 import { PluginModule } from "at/app/plugins";
+import { production } from "at/environments/environment";
 
 import { AppRootComponent } from "./root"
 import { PageNotFoundComponent } from "./not-found"
@@ -21,10 +22,13 @@ export const PageRoutes: Routes = [
 @NgModule({
   imports: [
     PluginModule,
-    RouterModule,
+    RouterModule.forRoot(
+      PageRoutes,
+      { enableTracing: !production } 
+    ),
   ],
   declarations: [
   ],
 })
-export class PageModule {
+export class PageRoutingModule {
 }

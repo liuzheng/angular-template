@@ -3,10 +3,9 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms"; // <-- NgModel lives here
 import { HttpClientModule } from "@angular/common/http";
 
-import { AppRoutingModule } from "./app-routing.module";
-import { PagesComponents, PageModule, AppRootComponent } from "./pages";
+import { PagesComponents, PageRoutingModule, AppRootComponent } from "./pages";
 import { PipesModule } from "./pipes";
-import { ProviderModule } from "./providers"
+import { Providers } from "./providers"
 import { PluginModule } from "./plugins";
 
 @NgModule({
@@ -14,11 +13,10 @@ import { PluginModule } from "./plugins";
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
     PipesModule,
     PluginModule,
-    ProviderModule,
-    PageModule
+    ...Providers,
+    PageRoutingModule
   ],
   declarations: [
     ...PagesComponents,

@@ -7,7 +7,7 @@ import { production } from "at/environments/environment";
 import { baseHref } from "at/app/globals";
 
 @Component({
-  selector: "app-root",
+  selector: "page-root",
   templateUrl: "./root.component.html",
   styleUrls: ["./root.component.sass"],
 })
