@@ -29,7 +29,7 @@ ng update @angular/core@next @angular/cli@next
 ```
 update other packages
 ```
-ng update @angular/cdk @ngx-translate/http-loader core-js hammerjs jquery node-gyp rxjs tslib zone.js
+ng update @angular/cdk@18 @ngx-translate/http-loader core-js hammerjs jquery node-gyp rxjs tslib zone.js
 ```
 
 ## Third party packages
