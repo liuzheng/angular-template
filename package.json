@@ -69,7 +69,6 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.1.2",
     "@angular/compiler-cli": "^18.1.2",
-    "@types/datatables.net": "^1.10.28",
     "@types/jasmine": "~5.1.4",
     "@types/jquery": "^3.5.30",
     "@types/node": "^20.14.12",
