@@ -69,6 +69,11 @@
                 "output": "assets/js/"
               },
               {
+                "input": "node_modules/datatables.net/js/",
+                "glob": "jquery.dataTables.js",
+                "output": "assets/js/"
+              },
+              {
                 "input": "node_modules/bootstrap/dist/js/",
                 "glob": "bootstrap.min.js",
                 "output": "assets/js/"
@@ -77,6 +82,16 @@
                 "input": "node_modules/bootstrap/dist/css/",
                 "glob": "bootstrap.min.css",
                 "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/datatables.net-dt/css/",
+                "glob": "jquery.dataTables.min.css",
+                "output": "assets/css/"
+              },
+              {
+                "input": "node_modules/datatables.net-dt/images/",
+                "glob": "*.png",
+                "output": "assets/images/"
               },
               {
                 "input": "node_modules/ace-builds/src-min-noconflict/",

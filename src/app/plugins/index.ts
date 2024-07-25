@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import { DataTablesModule } from "angular-datatables";
+// import { DataTablesModule } from "angular-datatables";
 import { AngularSplitModule } from "angular-split";
 import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
 import { NgProgressModule } from "ngx-progressbar";
@@ -33,7 +33,7 @@ import { PluginProgressComponent } from "./progress/progress.component";
     AngularSplitModule,
     ToastrModule.forRoot(), // ToastrModule added
     NgxEchartsModule,
-    DataTablesModule,
+    // DataTablesModule,
     NgProgressModule,
     QRCodeModule,
   ],
