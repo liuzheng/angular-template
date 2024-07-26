@@ -2,8 +2,10 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms"; // <-- NgModel lives here
 import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
+import { RouterModule } from "@angular/router";
+import { production } from "at/environments/environment";
 
-import { PagesComponents, PageRoutingModule, AppRootComponent } from "./pages";
+import { PagesComponents, PageRoutingModule, AppRootComponent, PageRoutes } from "./pages";
 import { PipesModule } from "./pipes";
 import { Providers } from "./providers"
 import { PluginModule } from "./plugins";
@@ -12,10 +14,14 @@ import { PluginModule } from "./plugins";
   imports: [
     BrowserModule,
     FormsModule,
+    RouterModule.forRoot(
+      PageRoutes,
+      { enableTracing: !production }
+    ),
     PipesModule,
     PluginModule,
     ...Providers,
-    PageRoutingModule
+    PageRoutingModule,
   ],
   declarations: [
     ...PagesComponents,
