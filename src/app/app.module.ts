@@ -5,7 +5,7 @@ import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http"
 import { RouterModule } from "@angular/router";
 import { production } from "at/environments/environment";
 
-import { PagesComponents, PageRoutingModule, AppRootComponent, PageRoutes } from "./pages";
+import { PagesComponents, AppRootComponent, PageRoutes } from "./pages";
 import { PipesModule } from "./pipes";
 import { Providers } from "./providers"
 import { PluginModule } from "./plugins";
@@ -21,7 +21,6 @@ import { PluginModule } from "./plugins";
     PipesModule,
     PluginModule,
     ...Providers,
-    PageRoutingModule,
   ],
   declarations: [
     ...PagesComponents,
