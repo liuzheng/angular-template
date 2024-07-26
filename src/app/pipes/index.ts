@@ -4,7 +4,7 @@ import {UtcDatePipe} from "./date.pipe";
 import {NoOrYesPipe, YesOrNoPipe} from "./yesorno.pipe";
 import {SafePipe} from "./safe.pipe";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
 // AoT requires an exported function for factories

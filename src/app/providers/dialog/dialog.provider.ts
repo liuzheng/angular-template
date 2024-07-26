@@ -1,7 +1,7 @@
-import {Component, Inject, Injectable, NgModule, TemplateRef} from "@angular/core";
-import {MatLegacyDialogRef as MatDialogRef, MatLegacyDialogConfig as MatDialogConfig, MatLegacyDialog as MatDialog, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA} from "@angular/material/legacy-dialog"
-import {ToastrService} from "ngx-toastr";
-import {ComponentType} from "@angular/cdk/portal";
+import { Component, Inject, Injectable, NgModule, TemplateRef } from "@angular/core";
+import { MatDialogRef, MatDialogConfig, MatDialog, MAT_DIALOG_DATA } from "@angular/material/dialog"
+import { ToastrService } from "ngx-toastr";
+import { ComponentType } from "@angular/cdk/portal";
 
 export class Option {
   width!: number;
@@ -21,7 +21,7 @@ class MSG {
 @Injectable()
 export class DialogService {
   logs: any[] = [];
-  defaultOption: Option = {height: 300, width: 400};
+  defaultOption: Option = { height: 300, width: 400 };
   options: any = {
     progress: true,
     timeout: 1000 * 5,
@@ -41,7 +41,7 @@ export class DialogService {
   };
 
   constructor(private Dialog: MatDialog,
-              private toastr: ToastrService) {
+    private toastr: ToastrService) {
   }
 
   checkdata(data: Option) {
@@ -53,7 +53,7 @@ export class DialogService {
         data.width = 400;
       }
     } else {
-      data = {height: 300, width: 400};
+      data = { height: 300, width: 400 };
     }
     return data;
   }
@@ -67,7 +67,7 @@ export class DialogService {
     return this.Dialog.open(DialogComponent, {
       height: data.height.toString() + "xp",
       width: data.width.toString() + "xp",
-      data: {name: "this.name", animal: "this.animal"}
+      data: { name: "this.name", animal: "this.animal" }
     });
   }
 
@@ -86,7 +86,7 @@ export class DialogService {
     return this.Dialog.open(AlertComponent, {
       height: data.height.toString() + "xp",
       width: data.width.toString() + "xp",
-      data: {content: data.content}
+      data: { content: data.content }
     });
   }
 
@@ -142,10 +142,10 @@ export class DialogService {
   prompt(option: Option) {
     // ToDo: use dialog type to fit for requirements
     this.Dialog.open(DialogComponent, {
-        height: (option.height || this.defaultOption.height).toString() + "px",
-        width: (option.width || this.defaultOption.width).toString() + "px",
-        data: option
-      }
+      height: (option.height || this.defaultOption.height).toString() + "px",
+      width: (option.width || this.defaultOption.width).toString() + "px",
+      data: option
+    }
     );
   }
 }
@@ -157,7 +157,7 @@ export class DialogService {
 })
 export class DialogComponent {
   constructor(public dialogRef: MatDialogRef<AlertComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: any) {
+    @Inject(MAT_DIALOG_DATA) public data: any) {
   }
 
   onNoClick(): void {
