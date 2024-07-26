@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms"; // <-- NgModel lives here
-import { HttpClientModule } from "@angular/common/http";
+import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
 
 import { PagesComponents, PageRoutingModule, AppRootComponent } from "./pages";
 import { PipesModule } from "./pipes";
@@ -12,7 +12,6 @@ import { PluginModule } from "./plugins";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
     PipesModule,
     PluginModule,
     ...Providers,
@@ -21,7 +20,8 @@ import { PluginModule } from "./plugins";
   declarations: [
     ...PagesComponents,
   ],
-  bootstrap: [AppRootComponent]
+  bootstrap: [AppRootComponent],
+  providers: [provideHttpClient(withInterceptorsFromDi())]
 })
 export class AppModule {
 }
