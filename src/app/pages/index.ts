@@ -4,16 +4,18 @@ import { production } from "at/environments/environment";
 import { PluginModule } from "at/app/plugins";
 
 import { AppRootComponent } from "./root"
+import { PageHomeComponent } from "./home"
 import { PageNotFoundComponent } from "./not-found"
 export { AppRootComponent } from "./root"
 
 export const PagesComponents = [
   AppRootComponent,
+  PageHomeComponent,
   PageNotFoundComponent
 ]
 export const PageRoutes: Routes = [
 
-  { path: '', component: AppRootComponent },
+  { path: '', component: PageHomeComponent },
 
   { path: '**', component: PageNotFoundComponent }
 ];

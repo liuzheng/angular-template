@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {Globals} from '../../globals';
+import { Component, OnInit } from '@angular/core';
+// import { Globals } from 'at/app/globals';
 
 @Component({
   selector: 'page-not-found',
@@ -8,7 +8,7 @@ import {Globals} from '../../globals';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor(private global: Globals) {
+  constructor() {
   }
 
   ngOnInit() {
