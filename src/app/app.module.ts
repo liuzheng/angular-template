@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms"; // <-- NgModel lives here
 import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { PagesComponents, PageRoutingModule, AppRootComponent } from "./pages";
 import { PipesModule } from "./pipes";
@@ -21,7 +22,7 @@ import { PluginModule } from "./plugins";
     ...PagesComponents,
   ],
   bootstrap: [AppRootComponent],
-  providers: [provideHttpClient(withInterceptorsFromDi())]
+  providers: [provideHttpClient(withInterceptorsFromDi()), provideAnimationsAsync()]
 })
 export class AppModule {
 }
