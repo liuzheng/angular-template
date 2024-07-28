@@ -76,8 +76,16 @@ import { NzWaterMarkModule } from 'ng-zorro-antd/water-mark';
 // 特色组件
 import { NzHashCodeModule } from 'ng-zorro-antd/hash-code';
 
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { zh_CN } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import zh from '@angular/common/locales/zh';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+registerLocaleData(zh);
 
 @NgModule({
+  providers: [{ provide: NZ_I18N, useValue: zh_CN }, provideAnimationsAsync()],
   exports: [
     NzButtonModule,
     NzIconModule,
@@ -147,7 +155,6 @@ import { NzHashCodeModule } from 'ng-zorro-antd/hash-code';
     NzBackTopModule,
     NzWaterMarkModule,
     NzHashCodeModule,
-
   ]
 })
 export class AntdModule {
