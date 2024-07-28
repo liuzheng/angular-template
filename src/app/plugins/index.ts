@@ -11,6 +11,7 @@ import { ToastrModule } from "ngx-toastr";
 import { NgxEchartsModule } from "ngx-echarts";
 
 import { MaterialModule } from "./Material.module";
+import { AntdModule } from "./antd.module";
 import { IconsModule } from "./Icons.module";
 
 import { QRCodeModule } from 'angularx-qrcode';
@@ -24,6 +25,7 @@ import { PluginProgressComponent } from "./progress/progress.component";
     CdkTreeModule,
     BrowserAnimationsModule,
     MaterialModule,
+    AntdModule,
     IconsModule,
     LoggerModule.forRoot({
       serverLoggingUrl: "/api/logs",
@@ -40,6 +42,7 @@ import { PluginProgressComponent } from "./progress/progress.component";
   exports: [
     FormsModule,
     MaterialModule,
+    AntdModule,
     IconsModule,
     AngularSplitModule,
     PluginQrCodeComponent,
