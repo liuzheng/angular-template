@@ -49,7 +49,7 @@ ng update font-awesome roboto-fontface
 
 ### Stylesheets
 ```
-ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr xterm xterm-addon-attach xterm-addon-fit xterm-addon-web-links
+ng update @angular/material ace-builds animate.css bootstrap echarts moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr @xterm/xterm @xterm/addon-attach @xterm/addon-fit @xterm/addon-web-links
 ```
 | package           | introduction                                                                                                                                                                                                                                                                                     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -59,13 +59,12 @@ ng update @angular/material ace-builds animate.css bootstrap echarts metro4 mome
 | animate.css       |                                                                                                                                                                                                                                                                                                  |
 | bootstrap         | Sleek, intuitive, and powerful front-end framework for faster and easier web development.                                                                                                                                                                                                        |
 | echarts           | Apache ECharts is a free, powerful charting and visualization library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender, which is a whole new lightweight canvas library. |
-| metro4            | Sleek, intuitive, and powerful front-end framework for faster and easier web development. Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style.                                                                                          |
 | moment            | A JavaScript date library for parsing, validating, manipulating, and formatting dates.                                                                                                                                                                                                           |
 | moment-timezone   | Parse and display moments in any timezone.                                                                                                                                                                                                                                                       |
 | ngx-echarts       | Angular directive for Apache ECharts (incubating) (version >= 3.x) (The project is renamed from angular2-echarts)                                                                                                                                                                                |
 | ngx-progressbar   | A nanoscopic progress bar. Featuring realistic trickle animations to convince your users that something is happening!                                                                                                                                                                            |
 | ngx-toastr        | Toastr for Angular                                                                                                                                                                                                                                                                               |
-| xterm             | Full xterm terminal, in your browser                                                                                                                                                                                                                                                             |
+| @xterm/xterm             | Full xterm terminal, in your browser                                                                                                                                                                                                                                                             |
 ### Communication
 ```
 ng update bufferutil socket.io socket.io-client neffos.js
@@ -93,9 +92,9 @@ ng update angular-datatables angular-split angularx-qrcode codemirror ngx-cookie
 | @popperjs/core        |                                                                                                                                                                                                             |
 | utf-8-validate        | Check if a buffer contains valid UTF-8 encoded text.                                                                                                                                                        |
 | @types/uuid           |                                                                                                                                                                                                             |
-| xterm-addon-attach    |                                                                                                                                                                                                             |
-| xterm-addon-fit       |                                                                                                                                                                                                             |
-| xterm-addon-web-links |                                                                                                                                                                                                             |
+| @xterm/addon-attach    |                                                                                                                                                                                                             |
+| @xterm/addon-fit       |                                                                                                                                                                                                             |
+| @xterm/addon-web-links |                                                                                                                                                                                                             |
 | zmodem.js             | ZMODEM file transfers in JavaScript                                                                                                                                                                         |
 
 ## Further help
