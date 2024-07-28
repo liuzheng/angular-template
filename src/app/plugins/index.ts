@@ -14,7 +14,6 @@ import { MaterialModule } from "./Material.module";
 import { AntdModule } from "./antd.module";
 import { IconsModule } from "./Icons.module";
 
-import { QRCodeModule } from 'angularx-qrcode';
 import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
 import { PluginEditorComponent } from "./ace-editor/ace-editor.component";
 import { PluginTerminalComponent } from "./terminal/terminal.component";
@@ -37,7 +36,6 @@ import { PluginProgressComponent } from "./progress/progress.component";
     NgxEchartsModule,
     // DataTablesModule,
     NgProgressModule,
-    QRCodeModule,
   ],
   exports: [
     FormsModule,
