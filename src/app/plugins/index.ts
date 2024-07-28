@@ -14,7 +14,6 @@ import { MaterialModule } from "./Material.module";
 import { AntdModule } from "./antd.module";
 import { IconsModule } from "./Icons.module";
 
-import { PluginQrCodeComponent } from "./qrcode/qrcode.component";
 import { PluginEditorComponent } from "./ace-editor/ace-editor.component";
 import { PluginTerminalComponent } from "./terminal/terminal.component";
 import { PluginProgressComponent } from "./progress/progress.component";
@@ -43,13 +42,11 @@ import { PluginProgressComponent } from "./progress/progress.component";
     AntdModule,
     IconsModule,
     AngularSplitModule,
-    PluginQrCodeComponent,
     PluginEditorComponent,
     PluginTerminalComponent,
     PluginProgressComponent,
   ],
   declarations: [
-    PluginQrCodeComponent,
     PluginEditorComponent,
     PluginTerminalComponent,
     PluginProgressComponent,
