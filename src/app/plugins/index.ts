@@ -21,21 +21,23 @@ import { ToastrModule } from "ngx-toastr";
 import { NgxEchartsModule } from "ngx-echarts";
 
 import { MaterialModule } from "./Material.module";
-// import { AntdModule } from "./antd.module";
+import { AntdModule } from "./antd.module";
 import { IconsModule } from "./Icons.module";
 
 import { PluginEditorComponent } from "./ace-editor/ace-editor.component";
 import { PluginTerminalComponent } from "./terminal/terminal.component";
 import { PluginProgressComponent } from "./progress/progress.component";
-// import { ProviderModule } from "at/app/providers";
+import { ProviderModule } from "at/app/providers";
+import { PipesModule } from "at/app/pipes";
 
 @NgModule({
   imports: [
     CommonModule, RouterLink, RouterOutlet, RouterLinkActive,
+    PipesModule, ProviderModule,
     // CdkTreeModule,
     // BrowserAnimationsModule,
-    // MaterialModule,
-    // AntdModule,
+    MaterialModule,
+    AntdModule,
     IconsModule,
     LoggerModule.forRoot({
       serverLoggingUrl: "/api/logs",
@@ -60,7 +62,7 @@ import { PluginProgressComponent } from "./progress/progress.component";
     CommonModule, RouterLink, RouterOutlet, RouterLinkActive,
     FormsModule,
     MaterialModule,
-    // AntdModule,
+    AntdModule,
     IconsModule,
     AngularSplitModule,
     PluginEditorComponent,
