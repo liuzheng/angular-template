@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { PluginModule } from "at/app/plugins";
+import { Plugins } from "at/app/plugins";
 // import { TranslateService } from "@ngx-translate/core";
 // import { Router } from '@angular/router';
 
@@ -11,9 +11,7 @@ import { PluginModule } from "at/app/plugins";
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [
-    PluginModule,
-  ],
+  imports: Plugins,
   templateUrl: "./root.component.html",
   styleUrls: ["./root.component.sass"],
 })

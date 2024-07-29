@@ -1,7 +1,5 @@
-// import { CdkTreeModule } from "@angular/cdk/tree";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-// import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
 
@@ -14,11 +12,11 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 // import { DataTablesModule } from "angular-datatables";
-import { AngularSplitModule } from "angular-split";
+// import { AngularSplitModule } from "angular-split";
 import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
-import { NgProgressModule } from "ngx-progressbar";
-import { ToastrModule } from "ngx-toastr";
-import { NgxEchartsModule } from "ngx-echarts";
+// import { NgProgressModule } from "ngx-progressbar";
+// import { ToastrModule } from "ngx-toastr";
+// import { NgxEchartsModule } from "ngx-echarts";
 
 import { MaterialModule } from "at/app/plugins/Material.module";
 // import { AntdModule } from "at/app/plugins/antd.module";
@@ -30,50 +28,28 @@ import { IconsModule } from "at/app/plugins/Icons.module";
 import { ProviderModule } from "at/app/providers";
 import { PipesModule } from "at/app/pipes";
 
-@NgModule({
-  imports: [
-    CommonModule, RouterLink, RouterOutlet, RouterLinkActive,
-    PipesModule, ProviderModule,
-    // CdkTreeModule,
-    // BrowserAnimationsModule,
-    MaterialModule,
-    // AntdModule,
-    IconsModule,
-    LoggerModule.forRoot({
-      serverLoggingUrl: "/api/logs",
-      level: NgxLoggerLevel.DEBUG,
-      serverLogLevel: NgxLoggerLevel.ERROR
-    }),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-    AngularSplitModule,
-    ToastrModule.forRoot(), // ToastrModule added
-    NgxEchartsModule,
-    // DataTablesModule,
-    NgProgressModule,
-    // ProviderModule,
-  ],
-  exports: [
-    CommonModule, RouterLink, RouterOutlet, RouterLinkActive,
-    FormsModule,
-    MaterialModule,
-    // AntdModule,
-    IconsModule,
-    AngularSplitModule,
-    // PluginEditorComponent,
-    // PluginTerminalComponent,
-    // PluginProgressComponent,
-  ],
-  declarations: [
-    // PluginEditorComponent,
-    // PluginTerminalComponent,
-    // PluginProgressComponent,
-  ]
-})
-export class PluginModule {
-}
+export const Plugins = [
+  // PipesModule, ProviderModule,
+  // AntdModule,
+  // MaterialModule,
+  // IconsModule,
+  CommonModule, RouterLink, RouterOutlet, RouterLinkActive,
+  FormsModule,
+  // LoggerModule.forRoot({
+  //   serverLoggingUrl: "/api/logs",
+  //   level: NgxLoggerLevel.DEBUG,
+  //   serverLogLevel: NgxLoggerLevel.ERROR
+  // }),
+  // TranslateModule.forRoot({
+  //   loader: {
+  //     provide: TranslateLoader,
+  //     useFactory: HttpLoaderFactory,
+  //     deps: [HttpClient]
+  //   }
+  // }),
+  // ToastrModule.forRoot(), // ToastrModule added
+  // AngularSplitModule,
+  // NgxEchartsModule,
+  // DataTablesModule,
+  // NgProgressModule,
+]
