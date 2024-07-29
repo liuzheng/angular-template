@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
-import { TranslateService } from "@ngx-translate/core";
-import { Router } from '@angular/router';
-
-import { production } from "at/environments/environment";
-import { baseHref } from "at/app/globals";
-
 import { PluginModule } from "at/app/plugins";
-import { AppProvider, LogProvider } from "src/app/providers";
+// import { TranslateService } from "@ngx-translate/core";
+// import { Router } from '@angular/router';
+
+// import { production } from "at/environments/environment";
+// import { baseHref } from "at/app/globals";
+
+// import { AppProvider, LogProvider } from "src/app/providers";
 
 @Component({
   selector: "app-root",
@@ -18,35 +18,4 @@ import { AppProvider, LogProvider } from "src/app/providers";
   styleUrls: ["./root.component.sass"],
 })
 export class AppRootComponent {
-  browserLang: any;
-  isCollapsed = false;
-
-  constructor(private translate: TranslateService,
-    private app: AppProvider,
-    private router: Router,
-    private logger: LogProvider,
-  ) {
-    if (production) {
-      logger.setLevel(0)
-    } else {
-      logger.setLevel(5)
-    }
-    translate.addLangs(["en", "cn"]);
-    translate.setDefaultLang("en");
-
-    this.browserLang = translate.getBrowserLang();
-    if (this.browserLang.match(/zh/)) {
-      this.app.translate("cn");
-    } else {
-      this.app.translate(this.browserLang.match(/en|cn/) ? this.browserLang : "en");
-    }
-    if (
-      document.location.pathname === baseHref + "settings" ||
-      document.location.pathname === baseHref + "test" ||
-      document.location.pathname === baseHref + "connect"
-    ) {
-      // bypass the login check
-    } else {
-    }
-  }
 }

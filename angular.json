@@ -21,7 +21,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "allowedCommonJsDependencies": [
-              "ace-builds",
+              // "ace-builds",
               "uuid-js/lib/uuid.js"
             ],
             "outputPath": "deploy/app",
@@ -163,7 +163,6 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "sass",
             "assets": [
               "src/assets"

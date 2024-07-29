@@ -9,7 +9,7 @@ import * as ace from "ace-builds";
 export class PluginEditorComponent implements OnInit, AfterViewInit {
   @ViewChild("editor") private editor!: ElementRef<HTMLElement>;
   @Input() theme = "ace/theme/twilight";
-  @Input() mode ="ace/mode/html";
+  @Input() mode = "ace/mode/html";
   constructor() {
   }
 

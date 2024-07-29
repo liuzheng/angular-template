@@ -24,7 +24,7 @@ import { MaterialModule } from "at/app/plugins/Material.module";
 // import { AntdModule } from "at/app/plugins/antd.module";
 import { IconsModule } from "at/app/plugins/Icons.module";
 
-import { PluginEditorComponent } from "at/app/plugins/ace-editor/ace-editor.component";
+// import { PluginEditorComponent } from "at/app/plugins/ace-editor/ace-editor.component";
 import { PluginTerminalComponent } from "at/app/plugins/terminal/terminal.component";
 import { PluginProgressComponent } from "at/app/plugins/progress/progress.component";
 import { ProviderModule } from "at/app/providers";
@@ -65,12 +65,12 @@ import { PipesModule } from "at/app/pipes";
     // AntdModule,
     IconsModule,
     AngularSplitModule,
-    PluginEditorComponent,
+    // PluginEditorComponent,
     PluginTerminalComponent,
     PluginProgressComponent,
   ],
   declarations: [
-    PluginEditorComponent,
+    // PluginEditorComponent,
     PluginTerminalComponent,
     PluginProgressComponent,
   ]
