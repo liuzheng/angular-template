@@ -4,16 +4,15 @@ import { NGXLogger } from "ngx-logger";
 // import {DialogService, ElementDialogComponent} from './elements/dialog/dialog.service';
 // import {MAT_LABEL_GLOBAL_OPTIONS} from '@angular/material/core';
 
-import { AppProvider } from "./app.provider";
-import { LogProvider } from "./log.provider";
-import { UUIDService } from "./uuid.provider";
-import { LocalstorageProvider } from "./localstorage.provider";
-import { DialogProvider } from "./dialog/dialog.provider";
+import { AppProvider } from "at/app/providers/app.provider";
+import { LogProvider } from "at/app/providers/log.provider";
+import { UUIDService } from "at/app/providers/uuid.provider";
+import { LocalstorageProvider } from "at/app/providers/localstorage.provider";
 
-export { AppProvider } from "./app.provider";
-export { LogProvider } from "./log.provider";
-export { UUIDService } from "./uuid.provider";
-export { LocalstorageProvider } from "./localstorage.provider";
+export { AppProvider } from "at/app/providers/app.provider";
+export { LogProvider } from "at/app/providers/log.provider";
+export { UUIDService } from "at/app/providers/uuid.provider";
+export { LocalstorageProvider } from "at/app/providers/localstorage.provider";
 
 @NgModule({
   providers: [
@@ -22,7 +21,6 @@ export { LocalstorageProvider } from "./localstorage.provider";
     AppProvider,
     UUIDService,
     LocalstorageProvider,
-    DialogProvider,
     // {provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: {float: 'always'}},
     // { provide: HTTP_INTERCEPTORS, useClass: NgProgressInterceptor, multi: true }
   ],

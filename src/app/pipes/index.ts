@@ -1,8 +1,8 @@
 import { NgModule } from "@angular/core";
 
-import { UtcDatePipe } from "./date.pipe";
-import { NoOrYesPipe, YesOrNoPipe } from "./yesorno.pipe";
-import { SafePipe } from "./safe.pipe";
+import { UtcDatePipe } from "at/app/pipes/date.pipe";
+import { NoOrYesPipe, YesOrNoPipe } from "at/app/pipes/yesorno.pipe";
+import { SafePipe } from "at/app/pipes/safe.pipe";
 
 @NgModule({
   declarations: [

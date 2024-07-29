@@ -20,13 +20,13 @@ import { NgProgressModule } from "ngx-progressbar";
 import { ToastrModule } from "ngx-toastr";
 import { NgxEchartsModule } from "ngx-echarts";
 
-import { MaterialModule } from "./Material.module";
-import { AntdModule } from "./antd.module";
-import { IconsModule } from "./Icons.module";
+import { MaterialModule } from "at/app/plugins/Material.module";
+// import { AntdModule } from "at/app/plugins/antd.module";
+import { IconsModule } from "at/app/plugins/Icons.module";
 
-import { PluginEditorComponent } from "./ace-editor/ace-editor.component";
-import { PluginTerminalComponent } from "./terminal/terminal.component";
-import { PluginProgressComponent } from "./progress/progress.component";
+import { PluginEditorComponent } from "at/app/plugins/ace-editor/ace-editor.component";
+import { PluginTerminalComponent } from "at/app/plugins/terminal/terminal.component";
+import { PluginProgressComponent } from "at/app/plugins/progress/progress.component";
 import { ProviderModule } from "at/app/providers";
 import { PipesModule } from "at/app/pipes";
 
@@ -37,7 +37,7 @@ import { PipesModule } from "at/app/pipes";
     // CdkTreeModule,
     // BrowserAnimationsModule,
     MaterialModule,
-    AntdModule,
+    // AntdModule,
     IconsModule,
     LoggerModule.forRoot({
       serverLoggingUrl: "/api/logs",
@@ -62,7 +62,7 @@ import { PipesModule } from "at/app/pipes";
     CommonModule, RouterLink, RouterOutlet, RouterLinkActive,
     FormsModule,
     MaterialModule,
-    AntdModule,
+    // AntdModule,
     IconsModule,
     AngularSplitModule,
     PluginEditorComponent,
