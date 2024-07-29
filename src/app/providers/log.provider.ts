@@ -63,13 +63,3 @@ export class LogProvider {
   }
 }
 
-@NgModule({
-  imports: [
-    LoggerModule.forRoot({
-      serverLoggingUrl: '/api/logs',
-      level: NgxLoggerLevel.DEBUG,
-      serverLogLevel: NgxLoggerLevel.ERROR
-    }),
-  ],
-})
-export class LogModule { }
