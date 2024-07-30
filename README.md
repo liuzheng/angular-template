@@ -49,7 +49,7 @@ ng update font-awesome roboto-fontface
 
 ### Stylesheets
 ```
-ng update @angular/material ace-builds animate.css bootstrap echarts metro4 moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr @xterm/xterm
+ng update @angular/material ace-builds animate.css bootstrap echarts  moment moment-timezone ngx-echarts ngx-progressbar ngx-toastr @xterm/xterm
 ```
 | package           | introduction                                                                                                                                                                                                                                                                                     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
