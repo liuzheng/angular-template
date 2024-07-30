@@ -1,8 +1,8 @@
-import {Component, ElementRef, OnInit, AfterViewInit, ViewChild} from "@angular/core";
-import {Terminal} from "xterm";
-import {WebLinksAddon} from "xterm-addon-web-links";
-import {AttachAddon} from "xterm-addon-attach";
-import {FitAddon} from "xterm-addon-fit";
+import { Component, ElementRef, OnInit, AfterViewInit, ViewChild } from "@angular/core";
+import { Terminal } from "@xterm/xterm";
+import { WebLinksAddon } from "@xterm/addon-web-links";
+import { AttachAddon } from "@xterm/addon-attach";
+import { FitAddon } from "@xterm/addon-fit";
 import "zmodem.js/dist/zmodem.devel"
 
 // todo: zmode support
@@ -12,7 +12,7 @@ import "zmodem.js/dist/zmodem.devel"
   styleUrls: ["./terminal.component.sass"]
 })
 export class PluginTerminalComponent implements OnInit, AfterViewInit {
-  @ViewChild("terminal", {static: false}) el!: ElementRef;
+  @ViewChild("terminal", { static: false }) el!: ElementRef;
 
   constructor() {
   }
