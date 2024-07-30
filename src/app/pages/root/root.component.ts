@@ -3,7 +3,8 @@ import { TranslateService } from "@ngx-translate/core";
 import { Router } from "@angular/router";
 
 import { AppProvider, LogProvider } from "at/app/providers";
-import { baseHref, environment } from "at/environments/environment";
+import { baseHref } from "at/environments/environment";
+// import { baseHref, environment } from "at/environments/environment";
 
 @Component({
   selector: "app-root",
@@ -18,11 +19,11 @@ export class AppRootComponent {
     private router: Router,
     private logger: LogProvider,
   ) {
-    if (environment.production) {
-      logger.setLevel(0)
-    } else {
-      logger.setLevel(5)
-    }
+    // if (environment.production) {
+    //   logger.setLevel(0)
+    // } else {
+    //   logger.setLevel(5)
+    // }
     translate.addLangs(["en", "cn"]);
     translate.setDefaultLang("en");
 

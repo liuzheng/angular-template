@@ -15,6 +15,13 @@ export const PageRoutes: Routes = [
 @NgModule({
   imports: [
     PluginModule,
+    RouterModule.forRoot(
+      PageRoutes,
+      { enableTracing: false } // <-- debugging purposes only
+      // {enableTracing: !environment.production} // <-- debugging purposes only
+    ),
+  ],
+  exports: [
     RouterModule,
   ],
   declarations: [
