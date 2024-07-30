@@ -1,7 +1,6 @@
 import { Injectable, NgModule } from "@angular/core";
 import { NGXLogger, LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
-import { production } from "at/environments/environment";
 import { LocalstorageProvider } from "./localstorage.provider";
 
 @Injectable()
@@ -18,9 +17,9 @@ export class LogProvider {
     // 5.- Level.WARN
     // always - Level.ERROR
     // always - Level.TRACE
-    if (production) {
-      this.localStorage.setItem("logLevel", '0')
-    }
+    // if (production) {
+    this.localStorage.setItem("logLevel", '0')
+    // }
   }
 
   setLevel(level: number) {
