@@ -4,7 +4,6 @@ import { FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 // import { DataTablesModule } from "angular-datatables";
-import { AngularSplitModule } from "angular-split";
 import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
 import { NgProgressModule } from "ngx-progressbar";
 import { ToastrModule } from "ngx-toastr";
@@ -28,7 +27,6 @@ import { PluginProgressComponent } from "./progress/progress.component";
       level: NgxLoggerLevel.DEBUG,
       serverLogLevel: NgxLoggerLevel.ERROR
     }),
-    AngularSplitModule,
     ToastrModule.forRoot(), // ToastrModule added
     NgxEchartsModule,
     // DataTablesModule,
@@ -38,7 +36,6 @@ import { PluginProgressComponent } from "./progress/progress.component";
     FormsModule,
     MaterialModule,
     IconsModule,
-    AngularSplitModule,
     PluginEditorComponent,
     PluginTerminalComponent,
     PluginProgressComponent,

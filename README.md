@@ -79,12 +79,12 @@ ng update bufferutil socket.io socket.io-client neffos.js
 
 ### Tools and others
 ```
-ng update angular-datatables angular-split codemirror ngx-cookie-service ngx-logger @popperjs/core utf-8-validate @types/uuid @xterm/addon-attach @xterm/addon-fit @xterm/addon-web-links zmodem.js
+ng update angular-datatables codemirror ngx-cookie-service ngx-logger @popperjs/core utf-8-validate @types/uuid @xterm/addon-attach @xterm/addon-fit @xterm/addon-web-links zmodem.js
 ```
 | package                | introduction                                                                                                                                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | angular-datatables     | Angular directive for DataTables                                                                                                                                                                            |
-| angular-split          | Angular UI library to split views and allow dragging to resize areas using CSS flexbox layout.                                                                                                              |
+| ~~angular-split~~      | Angular UI library to split views and allow dragging to resize areas using CSS flexbox layout.                                                                                                              |
 | ~~angularx-qrcode~~    | angularx-qrcode - a fast and easy-to-use Ivy compatible Ionic and Angular QR Code Generator library                                                                                                         |
 | codemirror             | This package provides an example configuration for the CodeMirror code editor. The actual editor is implemented in the various packages under the @codemirror scope, which this package depends on.         |
 | ~~ng-qrcode~~          | Simple AOT compatible QR code generator for your Angular project                                                                                                                                            |
