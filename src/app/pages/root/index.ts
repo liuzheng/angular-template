@@ -1,14 +1,17 @@
 import { Component } from "@angular/core";
-import { Plugins } from "at/app/plugins";
-// import { TranslateService } from "@ngx-translate/core";
-// import { Router } from '@angular/router';
+// import { Plugins } from "at/app/plugins";
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
 
-// import { AppProvider, LogProvider } from "src/app/providers";
+// import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: Plugins,
+  // imports: Plugins,
+  imports: [
+    CommonModule, RouterLink, RouterOutlet, RouterLinkActive,
+  ],
   templateUrl: "./root.component.html",
   styleUrls: ["./root.component.sass"],
 })
