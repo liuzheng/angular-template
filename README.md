@@ -59,7 +59,7 @@ ng update @angular/material ace-builds animate.css bootstrap echarts  moment mom
 | animate.css       |                                                                                                                                                                                                                                                                                                  |
 | bootstrap         | Sleek, intuitive, and powerful front-end framework for faster and easier web development.                                                                                                                                                                                                        |
 | echarts           | Apache ECharts is a free, powerful charting and visualization library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender, which is a whole new lightweight canvas library. |
-| metro4            | Sleek, intuitive, and powerful front-end framework for faster and easier web development. Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style.                                                                                          |
+| ~~metro4~~        | Sleek, intuitive, and powerful front-end framework for faster and easier web development. Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style.                                                                                          |
 | moment            | A JavaScript date library for parsing, validating, manipulating, and formatting dates.                                                                                                                                                                                                           |
 | moment-timezone   | Parse and display moments in any timezone.                                                                                                                                                                                                                                                       |
 | ngx-echarts       | Angular directive for Apache ECharts (incubating) (version >= 3.x) (The project is renamed from angular2-echarts)                                                                                                                                                                                |
@@ -79,7 +79,7 @@ ng update bufferutil socket.io socket.io-client neffos.js
 
 ### Tools and others
 ```
-ng update angular-datatables angular-split angularx-qrcode codemirror ngx-cookie-service ngx-logger @popperjs/core utf-8-validate @types/uuid @xterm/addon-attach @xterm/addon-fit @xterm/addon-web-links zmodem.js
+ng update angular-datatables angular-split codemirror ngx-cookie-service ngx-logger @popperjs/core utf-8-validate @types/uuid @xterm/addon-attach @xterm/addon-fit @xterm/addon-web-links zmodem.js
 ```
 | package                | introduction                                                                                                                                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
