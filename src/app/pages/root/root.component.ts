@@ -11,6 +11,7 @@ import { AppProvider, LogProvider } from "at/app/providers";
 })
 export class AppRootComponent {
   browserLang: any;
+  isCollapsed = false;
 
   constructor(private translate: TranslateService,
     private app: AppProvider,

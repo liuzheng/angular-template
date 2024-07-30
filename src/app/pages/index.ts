@@ -9,6 +9,7 @@ export { AppRootComponent } from "./root/root.component"
 
 export const PageRoutes: Routes = [
   { path: '', component: PageHomeComponent },
+  { path: 'welcome', loadChildren: () => import('./welcome/welcome.module').then(m => m.WelcomeModule) },
   { path: '**', component: PageNotFoundComponent }
 ];
 

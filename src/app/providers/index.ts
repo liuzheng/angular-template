@@ -11,6 +11,7 @@ import { LocalstorageProvider } from "./localstorage.provider";
 import { DialogProvider } from "./dialog/dialog.provider";
 import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from "@ngx-translate/core";
 import { HttpClient } from "@angular/common/http";
+import { AntdIconsProvider } from "./antd-icons.provider"
 
 export { AppProvider } from "./app.provider";
 export { LogProvider } from "./log.provider";
@@ -30,6 +31,7 @@ export { LocalstorageProvider } from "./localstorage.provider";
     // {provide: BrowserXhr, useClass: NgProgressBrowserXhr},
     NGXLogger,
     Globals,
+    AntdIconsProvider,
   ],
 })
 export class ProviderModule {
