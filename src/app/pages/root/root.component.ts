@@ -3,8 +3,6 @@ import { TranslateService } from "@ngx-translate/core";
 import { Router } from "@angular/router";
 
 import { AppProvider, LogProvider } from "at/app/providers";
-import { baseHref } from "at/environments/environment";
-// import { baseHref, environment } from "at/environments/environment";
 
 @Component({
   selector: "app-root",
@@ -19,7 +17,7 @@ export class AppRootComponent {
     private router: Router,
     private logger: LogProvider,
   ) {
-    // if (environment.production) {
+    // if (production) {
     //   logger.setLevel(0)
     // } else {
     //   logger.setLevel(5)
@@ -32,14 +30,6 @@ export class AppRootComponent {
       this.app.translate("cn");
     } else {
       this.app.translate(this.browserLang.match(/en|cn/) ? this.browserLang : "en");
-    }
-    if (
-      document.location.pathname === baseHref + "settings" ||
-      document.location.pathname === baseHref + "test" ||
-      document.location.pathname === baseHref + "connect"
-    ) {
-      // bypass the login check
-    } else {
     }
   }
 }

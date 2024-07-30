@@ -18,7 +18,6 @@ export const PageRoutes: Routes = [
     RouterModule.forRoot(
       PageRoutes,
       { enableTracing: false } // <-- debugging purposes only
-      // {enableTracing: !environment.production} // <-- debugging purposes only
     ),
   ],
   exports: [
