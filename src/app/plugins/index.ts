@@ -11,7 +11,7 @@ import { NgxEchartsModule } from "ngx-echarts";
 
 import { MaterialModule } from "./Material.module";
 import { IconsModule } from "./Icons.module";
-
+import { AntdModule } from "./antd.module";
 import { PluginEditorComponent } from "./ace-editor/ace-editor.component";
 import { PluginTerminalComponent } from "./terminal/terminal.component";
 import { PluginProgressComponent } from "./progress/progress.component";
@@ -31,11 +31,13 @@ import { PluginProgressComponent } from "./progress/progress.component";
     NgxEchartsModule,
     // DataTablesModule,
     NgProgressModule,
+    AntdModule,
   ],
   exports: [
     FormsModule,
     MaterialModule,
     IconsModule,
+    AntdModule,
     PluginEditorComponent,
     PluginTerminalComponent,
     PluginProgressComponent,
