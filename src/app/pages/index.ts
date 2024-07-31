@@ -24,8 +24,6 @@ export const PageRoutes: Routes = [
   exports: [
     RouterModule,
   ],
-  declarations: [
-  ],
 })
 export class PageModule {
 }
